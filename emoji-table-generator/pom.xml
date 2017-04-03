@@ -16,9 +16,16 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.maximebertheau</groupId>
+            <groupId>com.github.maxoumime</groupId>
             <artifactId>emoji-data-java</artifactId>
-            <version>1.0.0</version>
+            <version>v1.0</version>
         </dependency>
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
 </project>

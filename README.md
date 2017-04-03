@@ -188,693 +188,721 @@ Here is a table of the available emojis and their aliases.
 
 | Emoji | Aliases | Emoji | Aliases |
 | :---: | ------- | :---: | ------- |
-| 😦 | frowning | 📼 | vhs |
-| 🍷 | wine_glass | 🙎 | person_with_pouting_face |
-| 🍳 | egg | 🎪 | circus_tent |
-| 🎷 | saxophone | 😸 | smile_cat |
-| 🍵 | tea | 🤐 | zipper_mouth, zip_it, sealed_lips, lips_sealed |
-| 🐼 | panda_face | ⤵️ | arrow_heading_down |
-| 💩 | hankey, poop, shit | ⛏ | pick |
-| 🐰 | rabbit | 🚤 | speedboat |
-| 🛃 | customs | 🍶 | sake |
-| ☃ | snowman_with_snow, snowing_snowman | 🛐 | worship_building, worship_place, religious_building, religious_place |
-| 🐏 | ram | 📪 | mailbox_closed |
-| 🕶 | sunglasses | 🎲 | game_die |
-| 🛋 | couch_lamp, couch, sofa, lounge | 🐀 | rat |
-| 👨👩👧👧 | family_man_woman_girl_girl | 💮 | white_flower |
-| 🐄 | cow2 | 🍗 | poultry_leg |
-| 👤 | bust_in_silhouette | 😉 | wink |
-| 🔴 | red_circle | 🎽 | running_shirt_with_sash |
-| 🙃 | upside_down, flipped_face | 📰 | newspaper |
-| 🙃 | upside_down, flipped_face | 📇 | card_index |
-| 🏵 | rosette | 🖍 | lower_left_crayon |
-| 😫 | tired_face | 🌶 | hot_pepper, chili_pepper, spice, spicy |
-| 🏴 | waving_black_flag | 👠 | high_heel |
-| 🛣 | motorway, highway, road, interstate, freeway | 🌂 | closed_umbrella |
-| 🔃 | arrows_clockwise | 💵 | dollar |
-| 🚝 | monorail | 🐖 | pig2 |
-| ⛳ | golf | 😅 | sweat_smile |
-| 🔢 | 1234 | 🈴 | u5408 |
-| 🛍 | shopping_bags | ⛅ | partly_sunny |
-| ☄ | comet, light_beam, blue_beam | 🚯 | do_not_litter |
-| 😯 | hushed | ✋ | hand, raised_hand |
-| 🙈 | see_no_evil | 🅰️ | a |
-| ☝️ | point_up | 🅱️ | b |
-| 🔤 | abc | 🀄 | mahjong |
-| 🚭 | no_smoking | 🍫 | chocolate_bar |
-| 🎥 | movie_camera | Ⓜ️ | m |
-| 🕎 | menorah, candelabrum, chanukiah | ⭕ | o |
-| 😻 | heart_eyes_cat | 🔆 | high_brightness |
-| 👄 | lips | 👜 | handbag |
-| 🌝 | full_moon_with_face | ✌️ | v |
-| 📲 | calling | ⚪ | white_circle |
-| 🖥 | desktop_computer, pc_tower, imac | ❌ | x |
-| 📊 | bar_chart | 🌨 | cloud_snow |
-| 🌯 | burrito, wrap | 🐁 | mouse2 |
-| 🏋 | weight_lifter | 9️⃣ | nine |
-| 👫 | couple | 📹 | video_camera |
-| 🎵 | musical_note | 🕎 | menorah, candelabrum, chanukiah |
-| 🎶 | notes | 👯 | dancers |
-| 📿 | prayer_beads, dhikr_beads, rosary_beads | 📥 | inbox_tray |
-| ‼️ | bangbang | ⛸ | ice_skate, ice_skating |
-| 💽 | minidisc | 🚛 | articulated_lorry |
-| 😊 | blush | 🎟 | admission_ticket |
-| 🎤 | microphone | 🍈 | melon |
-| 🌬 | wind_blowing_face, mother_nature, blowing_wind | ➗ | heavy_division_sign |
-| ✋ | hand, raised_hand | 🗽 | statue_of_liberty |
-| 💩 | hankey, poop, shit | ❕ | grey_exclamation |
-| 📙 | orange_book | 🌔 | moon, waxing_gibbous_moon |
-| ℹ️ | information_source | ☢ | radioactive, radioactive_symbol, radioactive_sign |
-| 🕴 | hovering_man, levitating_man | 🐚 | shell |
-| 🛩 | small_airplane | 👩👩👧👧 | family_woman_woman_girl_girl |
-| 👷 | construction_worker | 📴 | mobile_phone_off |
-| 😺 | smiley_cat | 🔊 | loud_sound |
-| 🤐 | zipper_mouth, zip_it, sealed_lips, lips_sealed | 🏔 | snow_capped_mountain, mont_fuji |
-| 😴 | sleeping | 👖 | jeans |
-| ⚜ | fleur_de_lis, scouts | 🍐 | pear |
-| 🚓 | police_car | 🚏 | busstop |
-| 🚙 | blue_car | 🔚 | end |
-| 🛰 | satellite | 🐋 | whale2 |
-| 🎐 | wind_chime | 🔂 | repeat_one |
-| 🖐 | raised_hand_with_fingers_splayed, splayed_hand | 🎫 | ticket |
-| ☔ | umbrella | ⛩ | shinto_shrine, kami_no_michi |
-| 🏚 | derelict_house, old_house, abandoned_house | 🗒 | spiral_note_pad |
-| 🏷 | label | 🍚 | rice |
-| ✂️ | scissors | 🦄 | unicorn_face |
-| 🈷️ | u6708 | ♒ | aquarius |
-| 🈶 | u6709 | ☕ | coffee |
-| ✈️ | airplane | 😓 | sweat |
-| 🦀 | crab, cancer | 👪 | family |
-| 🕵 | detective, sleuth, private_eye, spy | 🦀 | crab, cancer |
-| 😘 | kissing_heart | 🎁 | gift |
-| 🛣 | motorway, highway, road, interstate, freeway | ↕️ | arrow_up_down |
-| ⛲ | fountain | ©️ | copyright |
-| 🏕 | camping, campsite, tent | 🖊 | lower_left_ballpoint_pen |
-| 🌒 | waxing_crescent_moon | 🍿 | popcorn |
-| 💟 | heart_decoration | 💊 | pill |
-| 🍢 | oden | ⏮ | black_left_pointing_double_triangle_with_vertical_bar |
-| 🐗 | boar | 🗳 | ballot, ballot_box |
-| 🐫 | camel | ⛸ | ice_skate, ice_skating |
-| 📧 | e-mail | 🕊 | dove, dove_peace |
-| ✡ | star_of_david | 🤗 | hugging, hug, hugs |
-| ◻️ | white_medium_square | 🍊 | tangerine |
-| 🕸 | spider_web, cobweb | 💡 | bulb |
-| 🕹 | joystick | 🎚 | level_slider |
-| 👲 | man_with_gua_pi_mao | 🐆 | leopard |
-| 🌎 | earth_americas | 📫 | mailbox |
-| 🍏 | green_apple | 🏐 | volleyball |
-| 💤 | zzz | 💠 | diamond_shape_with_a_dot_inside |
-| #️⃣ | hash | 🔫 | gun |
-| 🛐 | worship_building, worship_place, religious_building, religious_place | 😑 | expressionless |
-| 🚩 | triangular_flag_on_post | ⚛ | atom, atom_symbol |
-| 👩 | woman | 🚠 | mountain_cableway |
-| 🏒 | ice_hockey | 🐠 | tropical_fish |
-| 🍩 | doughnut | 😒 | unamused |
-| ⚫ | black_circle | 🤕 | injured, head_bandage, head_bandaged, bandaged |
-| 👙 | bikini | 🔝 | top |
-| 🚟 | suspension_railway | 🖌 | lower_left_paintbrush |
-| ⬛ | black_large_square | 🙋 | raising_hand |
-| 🚻 | restroom | ❄️ | snowflake |
-| 🎩 | tophat | ↙️ | arrow_lower_left |
-| ❓ | question | *⃣ | keycap_asterisk, star_keycap |
-| 🚺 | womens | 😽 | kissing_cat |
-| ⛵ | boat, sailboat | 💳 | credit_card |
-| 🎱 | 8ball | 🍘 | rice_cracker |
-| ⚓ | anchor | 🌹 | rose |
-| ♠️ | spades | 🔷 | large_blue_diamond |
-| ⚛ | atom, atom_symbol | 👰 | bride_with_veil |
-| 🕣 | clock830 | 👮 | cop |
-| 📮 | postbox | 🍖 | meat_on_bone |
-| 🌶 | hot_pepper, chili_pepper, spice, spicy | 🌶 | hot_pepper, chili_pepper, spice, spicy |
-| 🐮 | cow | 🐲 | dragon_face |
-| 🦁 | lion_face, cute_lion, timid_lion | 🙏 | pray |
-| 😐 | neutral_face | 🐷 | pig |
-| 🔘 | radio_button | 📟 | pager |
-| ♨️ | hotsprings | 🎡 | ferris_wheel |
-| 🤕 | injured, head_bandage, head_bandaged, bandaged | 🎙 | studio_microphone |
-| 📽 | film_projector | 🌳 | deciduous_tree |
-| ↩️ | leftwards_arrow_with_hook | 🏄 | surfer |
-| 🆕 | new | ◾ | black_medium_small_square |
-| ⚜ | fleur_de_lis, scouts | 🎋 | tanabata_tree |
-| 👨❤️💋👨 | couplekiss_man_man | 🌶 | hot_pepper, chili_pepper, spice, spicy |
-| 🏚 | derelict_house, old_house, abandoned_house | 💭 | thought_balloon |
-| 🐎 | racehorse | ⚖ | scales, scales_of_justice |
-| 🙅 | no_good | 🚐 | minibus |
-| 🙁 | slightly_frowning | 🕦 | clock1130 |
-| ⚙ | gear | 🎠 | carousel_horse |
-| ◼️ | black_medium_square | 🐔 | chicken |
-| 📳 | vibration_mode | ◽ | white_medium_small_square |
-| 🗣 | speaking_head_in_silhouette | 🏃 | runner, running |
-| 🏎 | racing_car, formula_one, f1 | 🐞 | beetle |
-| 🍱 | bento | ⛎ | ophiuchus |
-| 😝 | stuck_out_tongue_closed_eyes | 🖼 | picture_frame, painting, gallery |
-| 🎴 | flower_playing_cards | 💪 | muscle |
-| 🚧 | construction | 💀 | skull |
-| 👍 | +1, thumbsup | 😙 | kissing_smiling_eyes |
-| 💙 | blue_heart | 🌌 | milky_way |
-| 🌼 | blossom | 🐜 | ant |
-| 🎑 | rice_scene | 📬 | mailbox_with_mail |
-| 😢 | cry | 📝 | memo, pencil |
-| 🈯 | u6307 | 🍍 | pineapple |
-| 🈁 | koko | 🎼 | musical_score |
-| 🦁 | lion_face, cute_lion, timid_lion | 🗡 | dagger, dagger_knife, knife_weapon |
-| 💧 | droplet | 💬 | speech_balloon |
-| 🈚 | u7121 | 💍 | ring |
-| 🐙 | octopus | 🗾 | japan |
-| 🕡 | clock630 | 🚢 | ship |
-| 🛋 | couch_lamp, couch, sofa, lounge | 📛 | name_badge |
-| 🧀 | cheese | 🖐 | raised_hand_with_fingers_splayed, splayed_hand |
-| ⛰ | mountain | 🌜 | last_quarter_moon_with_face |
-| ☮ | peace_symbol, peace_sign | 🔏 | lock_with_ink_pen |
-| 🍰 | cake | ♌ | leo |
-| ♻️ | recycle | ↪️ | arrow_right_hook |
-| 🤓 | nerd, nerdy | 🏺 | amphora, jar, vase |
-| 🚍 | oncoming_bus | 🏑 | field_hockey |
-| ♏ | scorpius | 🤐 | zipper_mouth, zip_it, sealed_lips, lips_sealed |
-| 🤕 | injured, head_bandage, head_bandaged, bandaged | 🕍 | synagogue, temple, jewish |
-| 🔇 | mute | 🔌 | electric_plug |
-| 🏊 | swimmer | ❎ | negative_squared_cross_mark |
-| 😶 | no_mouth | 👣 | footprints |
-| 🎍 | bamboo | 👁 | eye |
-| 🚽 | toilet | ✉️ | email, envelope |
-| 🌛 | first_quarter_moon_with_face | 🦃 | turkey |
-| ⛑ | helmet_white_cross | 🔭 | telescope |
-| 🏹 | bow_and_arrow, bow_arrow, archery | 🏬 | department_store |
-| 🌅 | sunrise | 🗯 | right_anger_bubble, zig_zag_bubble |
-| 🕌 | mosque, minaret, domed_roof | 🛬 | airplane_arriving, airplane_arrival, landing |
-| 🌉 | bridge_at_night | 🔋 | battery |
-| 🖲 | trackball | 2️⃣ | two |
-| 🚁 | helicopter | 😧 | anguished |
-| 🚜 | tractor | 🉐 | ideograph_advantage |
-| 🃏 | black_joker | 📸 | camera_flash |
-| 🐕 | dog2 | 😟 | worried |
-| 🍉 | watermelon | 🏆 | trophy |
-| 🔦 | flashlight | 👩👩👧👦 | family_woman_woman_girl_boy |
-| 🌴 | palm_tree | 🤔 | thinking, think, thinker |
-| 😤 | triumph | 🎨 | art |
-| 🔞 | underage | 👡 | sandal |
-| 🚸 | children_crossing | 😛 | stuck_out_tongue |
-| 🙊 | speak_no_evil | 🌧 | cloud_rain |
-| 💘 | cupid | 🚦 | vertical_traffic_light |
-| 🕉 | om_symbol, pranava, aumkara, omkara | 💩 | hankey, poop, shit |
-| 👕 | shirt, tshirt | ⌚ | watch |
-| 👏 | clap | ➡️ | arrow_right |
-| 💹 | chart | 🕟 | clock430 |
-| 👇 | point_down | 🎄 | christmas_tree |
-| 🤗 | hugging, hug, hugs | 💚 | green_heart |
-| 💣 | bomb | 👨👨👧👧 | family_man_man_girl_girl |
-| 🐭 | mouse | 😞 | disappointed |
-| 🐣 | hatching_chick | 🏫 | school |
-| 🈵 | u6e80 | ♉ | taurus |
-| ⬅️ | arrow_left | 🏧 | atm |
-| 🕌 | mosque, minaret, domed_roof | 🏌 | golfer, golf_club |
-| 🍀 | four_leaf_clover | 🔓 | unlock |
-| 🕵 | detective, sleuth, private_eye, spy | 💌 | love_letter |
-| ☮ | peace_symbol, peace_sign | 🌟 | star2 |
-| ☎️ | phone, telephone | 👧 | girl |
-| 👒 | womans_hat | 🚃 | railway_car |
-| ☹ | frowning_face | 🔖 | bookmark |
-| 🍦 | icecream | 🎺 | trumpet |
-| 🤖 | robot_face, bot_face | 🖥 | desktop_computer, pc_tower, imac |
-| 🎮 | video_game | 🐊 | crocodile |
-| ☂ | open_umbrella | 💥 | boom, collision |
-| 🐇 | rabbit2 | 📖 | book, open_book |
-| 🚚 | truck | 📈 | chart_with_upwards_trend |
-| 🕴 | hovering_man, levitating_man | 🕍 | synagogue, temple, jewish |
-| 💄 | lipstick | 🏠 | house |
-| 👋 | wave | 👨👨👦 | family_man_man_boy |
-| 🍕 | pizza | 🍸 | cocktail |
-| 🌺 | hibiscus | 🛎 | bellhop_bell |
-| 🤔 | thinking, think, thinker | 👢 | boot |
-| 👞 | mans_shoe, shoe | 🏝 | desert_island |
-| 🎣 | fishing_pole_and_fish | 💴 | yen |
-| 🔱 | trident | 🎰 | slot_machine |
-| 🌠 | stars | 😰 | cold_sweat |
-| 🕒 | clock3 | 🕑 | clock2 |
-| ◀️ | arrow_backward | 🕔 | clock5 |
-| 👺 | japanese_goblin | 🕓 | clock4 |
-| 🕐 | clock1 | 🔟 | keycap_ten |
-| ▶️ | arrow_forward | 🕖 | clock7 |
-| 🕕 | clock6 | 🕘 | clock9 |
-| 🕗 | clock8 | 📿 | prayer_beads, dhikr_beads, rosary_beads |
-| 🅿️ | parking | 🕝 | clock230 |
-| 🙉 | hear_no_evil | 💓 | heartbeat |
-| 🖱 | computer_mouse, three_button_mouse | 🙂 | slightly_smiling |
-| ⛈ | thunder_cloud_rain | ⬜ | white_large_square |
-| 3️⃣ | three | 🤑 | money_mouth, money_face |
-| 💗 | heartpulse | 🎖 | military_medal, military_decoration |
-| 💁 | information_desk_person | 👸 | princess |
-| 📠 | fax | 🚊 | tram |
-| 🖼 | picture_frame, painting, gallery | 🕎 | menorah, candelabrum, chanukiah |
-| 🚑 | ambulance | ✅ | white_check_mark |
-| 🤘 | horns_sign, rock_on, heavy_metal, devil_fingers | 🏗 | building_construction, crane |
-| 🐈 | cat2 | 🌔 | moon, waxing_gibbous_moon |
-| ↘️ | arrow_lower_right | ✔️ | heavy_check_mark |
-| 🍜 | ramen | ☎️ | phone, telephone |
-| 🚇 | metro | 🤘 | horns_sign, rock_on, heavy_metal, devil_fingers |
-| 🐃 | water_buffalo | 🗞 | rolled_up_newspaper, newspaper_delivery |
-| 👹 | japanese_ogre | 🌡 | thermometer, hot_weather, temperature |
-| 👔 | necktie | 🎎 | dolls |
-| 🐵 | monkey_face | 🔠 | capital_abcd |
-| 🎏 | flags | 😔 | pensive |
-| 👾 | space_invader | 🍭 | lollipop |
-| 🚆 | train2 | ☘ | shamrock, st_patrick |
-| 👽 | alien | 📁 | file_folder |
-| 💻 | computer | 🍥 | fish_cake |
-| 🏔 | snow_capped_mountain, mont_fuji | ↔️ | left_right_arrow |
-| 🍟 | fries | 🛅 | left_luggage |
-| 👁🗨 | eye_in_speech_bubble, i_am_a_witness | 😌 | relieved |
-| 🍾 | champagne, sparkling_wine | 🦂 | scorpion |
-| 😁 | grin | 📒 | ledger |
-| 👬 | two_men_holding_hands | ☠ | skull_crossbones |
-| ☑️ | ballot_box_with_check | 🍓 | strawberry |
-| 🏹 | bow_and_arrow, bow_arrow, archery | ⤴️ | arrow_heading_up |
-| 🎾 | tennis | 👨👩👦👦 | family_man_woman_boy_boy |
-| ☸ | wheel_of_dharma | 👕 | shirt, tshirt |
-| ☣ | biohazard, biohazard_symbol, biohazard_sign | 🏳 | waving_white_flag |
-| 😡 | rage | 🌘 | waning_crescent_moon |
-| 😹 | joy_cat | 😣 | persevere |
-| 😿 | crying_cat_face | 🚪 | door |
-| ♦️ | diamonds | ⛹ | person_with_ball |
-| 🐒 | monkey | 🗯 | right_anger_bubble, zig_zag_bubble |
-| 🌀 | cyclone | 👨👨👦👦 | family_man_man_boy_boy |
-| ☁️ | cloud | 💱 | currency_exchange |
-| 🗻 | mount_fuji | 🚖 | oncoming_taxi |
-| 🐳 | whale | ✏️ | pencil2 |
-| 🏞 | national_park | ⏲ | timer_clock |
-| 🐻 | bear | 🎉 | tada |
-| 🍌 | banana | 〰️ | wavy_dash |
-| 🎻 | violin | 📦 | package |
-| 📂 | open_file_folder | 🛋 | couch_lamp, couch, sofa, lounge |
-| 👊 | facepunch, punch | ↖️ | arrow_upper_left |
-| 🌮 | taco | 🛤 | railway_track |
-| 😍 | heart_eyes | 🌈 | rainbow |
-| ➖ | heavy_minus_sign | 🕵 | detective, sleuth, private_eye, spy |
-| 📢 | loudspeaker | 🌍 | earth_africa |
-| 🙄 | eye_roll, rolling_eyes | ✝ | latin_cross, christian_cross |
-| 🏕 | camping, campsite, tent | 🎖 | military_medal, military_decoration |
-| 👨👨👧👦 | family_man_man_girl_boy | 🌭 | hot_dog |
-| 🌬 | wind_blowing_face, mother_nature, blowing_wind | 🔬 | microscope |
-| 🚲 | bike | ☺️ | relaxed |
-| 😂 | joy | ⏫ | arrow_double_up |
-| ✳️ | eight_spoked_asterisk | 🏥 | hospital |
-| 🍯 | honey_pot | 🐑 | sheep |
-| ⏳ | hourglass_flowing_sand | ⚽ | soccer |
-| 🤒 | sick, ill, thermometer_face | 🏖 | breach |
-| 📉 | chart_with_downwards_trend | 🌚 | new_moon_with_face |
-| 🌖 | waning_gibbous_moon | 🚒 | fire_engine |
-| 🌏 | earth_asia | 📕 | closed_book |
-| ☢ | radioactive, radioactive_symbol, radioactive_sign | 😇 | innocent |
-| 🗡 | dagger, dagger_knife, knife_weapon | 💋 | kiss |
-| 👨❤️👨 | couple_with_heart_man_man | 🍽 | fork_knife_plate |
-| 😳 | flushed | 🍔 | hamburger |
-| 🤑 | money_mouth, money_face | 🚴 | bicyclist |
-| ⌛ | hourglass | 🚥 | traffic_light |
-| 🏙 | cityscape | ⚰ | coffin, funeral, casket |
-| 🍮 | custard | 🎦 | cinema |
-| 🚔 | oncoming_police_car | 🍺 | beer |
-| 😃 | smiley | 🛫 | airplane_departure, take_off |
-| 🆎 | ab | 🛋 | couch_lamp, couch, sofa, lounge |
-| 🇦🇩 | ad | 🇦🇪 | ae |
-| 🇦🇫 | af | 🇦🇬 | ag |
-| 🍑 | peach | 🏮 | izakaya_lantern, lantern |
-| 🇦🇮 | ai | 💑 | couple_with_heart |
-| 🚱 | non-potable_water | 😠 | angry |
-| 🇦🇱 | al | 🇦🇲 | am |
-| 🇦🇴 | ao | 📍 | round_pushpin |
-| 🇦🇷 | ar | 🇦🇸 | as |
-| 🇦🇹 | at | 🇦🇺 | au |
-| 🇦🇼 | aw | 🔐 | closed_lock_with_key |
-| 🇦🇿 | az | 🗨 | left_speech_bubble |
-| 💖 | sparkling_heart | 🗜 | compression |
-| 🇧🇦 | ba | 🇧🇧 | bb |
-| 📣 | mega | ☪ | star_and_crescent, star_crescent |
-| 🇧🇩 | bd | 🍝 | spaghetti |
-| 🇧🇪 | be | 🇧🇫 | bf |
-| 🇧🇬 | bg | 🇧🇭 | bh |
-| 🚡 | aerial_tramway | 🇧🇮 | bi |
-| 💔 | broken_heart | 🇧🇯 | bj |
-| 🐥 | hatched_chick | 🍅 | tomato |
-| 🇧🇲 | bm | 🇧🇳 | bn |
-| 👀 | eyes | 🇧🇴 | bo |
-| 🇧🇷 | br | 🇧🇸 | bs |
-| 🇧🇹 | bt | 🌑 | new_moon |
-| 🇧🇼 | bw | 🕊 | dove, dove_peace |
-| 🇧🇾 | by | ☄ | comet, light_beam, blue_beam |
-| 🇧🇿 | bz | 🏨 | hotel |
-| 🛄 | baggage_claim | 🌋 | volcano |
-| 💒 | wedding | 🏡 | house_with_garden |
-| 🇨🇦 | ca | 🛠 | hammer_and_wrench |
-| 🇨🇩 | cd | 🇨🇫 | cf |
-| 🇨🇬 | cg | 🇨🇭 | ch |
-| 🇨🇮 | ci | 🇨🇰 | ck |
-| 🇨🇱 | cl | 🇨🇲 | cm |
-| 🇨🇳 | cn | 🌰 | chestnut |
-| 🇨🇴 | co | 🐪 | dromedary_camel |
-| 🌻 | sunflower | 🔡 | abcd |
-| 🇨🇰 | cr | 🐡 | blowfish |
-| 👨👨👧 | family_man_man_girl | 🇨🇺 | cu |
-| 🇨🇻 | cv | 🇨🇼 | cw |
-| 🛥 | motor_boat | 🇨🇾 | cy |
-| 👨👩👦 | family_man_woman_boy | 🇨🇿 | cz |
-| 🎃 | jack_o_lantern | ▪️ | black_small_square |
-| 🛫 | airplane_departure, take_off | 😲 | astonished |
-| 🏜 | desert | 🕷 | spider |
-| 👛 | purse | 🐧 | penguin |
-| ⏱ | stopwatch | 🛏 | bed, bedroom |
-| 🇩🇪 | de | 🐝 | bee, honeybee |
-| 👩👩👧 | family_woman_woman_girl | ↗️ | arrow_upper_right |
-| 🇩🇯 | dj | 🚵 | mountain_bicyclist |
-| 🇩🇰 | dk | 🖕 | middle_finger |
-| 🇩🇲 | dm | ♈ | aries |
-| 🇩🇴 | do | 🏎 | racing_car, formula_one, f1 |
-| 👵 | older_woman | 🎳 | bowling |
-| 😚 | kissing_closed_eyes | 👥 | busts_in_silhouette |
-| 🌪 | cloud_tornado | 🔰 | beginner |
-| 🇩🇿 | dz | 🐦 | bird |
-| 🐿 | chipmunk, squirrel | ⚠️ | warning |
-| 🔲 | black_square_button | 🛣 | motorway, highway, road, interstate, freeway |
-| 🇪🇨 | ec | 🚋 | train |
-| 🏪 | convenience_store | 🇪🇪 | ee |
-| 🐬 | dolphin, flipper | 🔳 | white_square_button |
-| 🇪🇬 | eg | 📏 | straight_ruler |
-| ⚒ | hammer_and_pick | 🚫 | no_entry_sign |
-| 🎀 | ribbon | 🌩 | cloud_lightning |
-| 🎓 | mortar_board | 🇪🇷 | er |
-| 🛣 | motorway, highway, road, interstate, freeway | 🇪🇸 | es |
-| 🇪🇹 | et | ♑ | capricorn |
-| 🏌 | golfer, golf_club | 🍼 | baby_bottle |
-| 🚣 | rowboat | 🔪 | hocho, knife |
-| ☪ | star_and_crescent, star_crescent | ⚖ | scales, scales_of_justice |
-| 🌆 | city_sunset | 🐅 | tiger2 |
-| 🚂 | steam_locomotive | 🔩 | nut_and_bolt |
-| 🐘 | elephant | 💜 | purple_heart |
-| 🌫 | fog | 💂 | guardsman |
-| ✨ | sparkles | 🎇 | sparkler |
-| 🇫🇮 | fi | 🇫🇯 | fj |
-| 🔙 | back | 🇫🇴 | fo |
-| 🇫🇷 | fr | 🎅 | santa |
-| 😋 | yum | ⚱ | funeral_urn |
-| 💷 | pound | 🍋 | lemon |
-| 🕌 | mosque, minaret, domed_roof | ⛴ | ferry |
-| 🇬🇦 | ga | 🇬🇧 | gb |
-| 🇬🇩 | gd | 🇬🇪 | ge |
-| 🇬🇫 | gf | 💲 | heavy_dollar_sign |
-| 🏘 | house_buildings, multiple_houses | 🗳 | ballot, ballot_box |
-| 🇬🇭 | gh | 🇬🇮 | gi |
-| 6️⃣ | six | 🙆 | ok_woman |
-| 🇬🇲 | gm | 🇬🇳 | gn |
-| 🇬🇵 | gp | 🇬🇶 | gq |
-| 🏈 | football | 🇬🇷 | gr |
-| 🇬🇹 | gt | 🇬🇺 | gu |
-| 🇬🇼 | gw | 🕳 | hole |
-| 🌞 | sun_with_face | 🇬🇾 | gy |
-| 🍴 | fork_and_knife | ⏪ | rewind |
-| 🗂 | card_index_dividers | 📭 | mailbox_with_no_mail |
-| 😜 | stuck_out_tongue_winking_eye | 👶 | baby |
-| 🖖 | vulcan_salute | 🤗 | hugging, hug, hugs |
-| 🔕 | no_bell | ❇️ | sparkle |
-| 🇭🇰 | hk | 🏤 | european_post_office |
-| 🇭🇳 | hn | 📝 | memo, pencil |
-| 🇭🇷 | hr | 🤒 | sick, ill, thermometer_face |
-| 🇭🇹 | ht | 👉 | point_right |
-| 📋 | clipboard | 🇭🇺 | hu |
-| 🔜 | soon | ☣ | biohazard, biohazard_symbol, biohazard_sign |
-| 🎿 | ski | 👟 | athletic_shoe |
-| 4️⃣ | four | 🔒 | lock |
-| 🏟 | stadium | 🎬 | clapper |
-| 🇮🇩 | id | 🇮🇪 | ie |
-| 👑 | crown | 🤐 | zipper_mouth, zip_it, sealed_lips, lips_sealed |
-| 🇮🇱 | il | 🍪 | cookie |
-| ⬆️ | arrow_up | 🇮🇳 | in |
-| 😆 | laughing, satisfied | 👩❤️💋👩 | couplekiss_woman_woman |
-| 🖨 | printer | 🇮🇶 | iq |
-| 🇮🇷 | ir | ☃ | snowman_with_snow, snowing_snowman |
-| ➰ | curly_loop | 🇮🇸 | is |
-| 📐 | triangular_ruler | 🔀 | twisted_rightwards_arrows |
-| 🇮🇹 | it | 🕉 | om_symbol, pranava, aumkara, omkara |
-| 🔔 | bell | 🍛 | curry |
-| 👳 | man_with_turban | 🕛 | clock12 |
-| 🕚 | clock11 | 🎞 | film_frames |
-| 🕙 | clock10 | ⚔ | crossed_swords |
-| 📞 | telephone_receiver | 🈸 | u7533 |
-| ⚾️ | baseball | 🍙 | rice_ball |
-| 💏 | couplekiss | 🐶 | dog |
-| 🛡 | shield | 🇯🇲 | jm |
-| ☘ | shamrock, st_patrick | 🇯🇴 | jo |
-| 🇯🇵 | jp | 🕋 | kaaba, mecca |
-| 🎗 | reminder_ribbon, awareness_ribbon | 🤔 | thinking, think, thinker |
-| 🤓 | nerd, nerdy | 😏 | smirk |
-| 8️⃣ | eight | 🔍 | mag |
-| 😬 | grimacing | 🌲 | evergreen_tree |
-| 📃 | page_with_curl | ♎ | libra |
-| 🇰🇪 | ke | 👨 | man |
-| 🕋 | kaaba, mecca | 📷 | camera |
-| 🇰🇬 | kg | 🇰🇭 | kh |
-| 🇰🇮 | ki | 🌓 | first_quarter_moon |
-| 🍞 | bread | 🇰🇲 | km |
-| 🚷 | no_pedestrians | 🇰🇵 | kp |
-| 👍 | +1, thumbsup | 🇰🇷 | kr |
-| 🔅 | low_brightness | ♓ | pisces |
-| 🚎 | trolleybus | 🇰🇼 | kw |
-| 🤘 | horns_sign, rock_on, heavy_metal, devil_fingers | 🏮 | izakaya_lantern, lantern |
-| 🎗 | reminder_ribbon, awareness_ribbon | 🚹 | mens |
-| 🇰🇾 | ky | 🇰🇿 | kz |
-| 📗 | green_book | 🇱🇦 | la |
-| 🇱🇧 | lb | 🕯 | candle |
-| 🕧 | clock1230 | ✖️ | heavy_multiplication_x |
-| 👨👩👧 | family_man_woman_girl | 🎌 | crossed_flags |
-| 📔 | notebook_with_decorative_cover | 🇱🇮 | li |
-| 🖋 | lower_left_fountain_pen | 🇱🇰 | lk |
-| 🕰 | mantelpiece_clock | 🐾 | feet, paw_prints |
-| ⛄ | snowman | 🖥 | desktop_computer, pc_tower, imac |
-| ▫️ | white_small_square | 🇱🇷 | lr |
-| 😭 | sob | 🇱🇸 | ls |
-| 🇱🇹 | lt | 🇱🇺 | lu |
-| 🇱🇻 | lv | 🙄 | eye_roll, rolling_eyes |
-| 🗝 | old_key | 👼 | angel |
-| 🎒 | school_satchel | 🏢 | office |
-| ✴️ | eight_pointed_black_star | 💢 | anger |
-| 🇱🇾 | ly | 💦 | sweat_drops |
-| 😄 | smile | 📻 | radio |
-| 😕 | confused | 🇲🇦 | ma |
-| 🆘 | sos | 🍡 | dango |
-| 🇲🇩 | md | 🇲🇪 | me |
-| 🍣 | sushi | 🍾 | champagne, sparkling_wine |
-| 🇲🇬 | mg | 🇲🇰 | mk |
-| 🇲🇱 | ml | 🏚 | derelict_house, old_house, abandoned_house |
-| 🇲🇲 | mm | 🇲🇳 | mn |
-| 🇲🇴 | mo | 🅾️ | o2 |
-| 🇲🇵 | mp | 👎 | -1, thumbsdown |
-| 🐢 | turtle | 🇲🇶 | mq |
-| 🇲🇷 | mr | *⃣ | keycap_asterisk, star_keycap |
-| 🇲🇸 | ms | 🇲🇹 | mt |
-| 🇲🇻 | mv | 🇲🇼 | mw |
-| 🚰 | potable_water | 🇲🇽 | mx |
-| 🇲🇾 | my | 🇲🇿 | mz |
-| ❤️ | heart | 🔧 | wrench |
-| ⛱ | planted_umbrella, umbrella_on_ground | 🐤 | baby_chick |
-| 🇳🇦 | na | 🇳🇨 | nc |
-| 🇳🇪 | ne | 🇳🇬 | ng |
-| 🇳🇮 | ni | 🌡 | thermometer, hot_weather, temperature |
-| 👎 | -1, thumbsdown | 🕵 | detective, sleuth, private_eye, spy |
-| 🇳🇱 | nl | 🎂 | birthday |
-| 🌄 | sunrise_over_mountains | 🇳🇴 | no |
-| 🇳🇵 | np | 🔨 | hammer |
-| 🍬 | candy | 🐽 | pig_nose |
-| 🇳🇺 | nu | ☦ | orthodox_cross |
-| 📵 | no_mobile_phones | 🙇 | bow |
-| 🕤 | clock930 | 🇳🇿 | nz |
-| 👦 | boy | 🔣 | symbols |
-| 👘 | kimono | 💉 | syringe |
-| 📨 | incoming_envelope | 🚬 | smoking |
-| 🔁 | repeat | 💝 | gift_heart |
-| 🈲 | u7981 | 🆗 | ok |
-| 🇴🇲 | om | 🗺 | world_map |
-| 🔛 | on | ⌨ | keyboard |
-| 🐓 | rooster | 🐩 | poodle |
-| 💾 | floppy_disk | 📯 | postal_horn |
-| 🔯 | six_pointed_star | 🐂 | ox |
-| 🏇 | horse_racing | ❔ | grey_question |
-| 💯 | 100 | 🇵🇦 | pa |
-| 🗓 | spiral_calendar_pad | 🇵🇪 | pe |
-| 🖼 | picture_frame, painting, gallery | 🍧 | shaved_ice |
-| 🇵🇬 | pg | 🇵🇭 | ph |
-| 🚳 | no_bicycles | 🇵🇰 | pk |
-| 🇵🇱 | pl | 🕥 | clock1030 |
-| 🕸 | spider_web, cobweb | ⛔ | no_entry |
-| ⛵ | boat, sailboat | 💛 | yellow_heart |
-| 🇵🇷 | pr | 🏯 | japanese_castle |
-| 🇵🇸 | ps | 🇵🇹 | pt |
-| ☯ | yin_yang | 🚀 | rocket |
-| 🇵🇼 | pw | ®️ | registered |
-| 🇵🇾 | py | 😱 | scream |
-| 🏺 | amphora, jar, vase | 🏘 | house_buildings, multiple_houses |
-| 🕉 | om_symbol, pranava, aumkara, omkara | 👩👩👦👦 | family_woman_woman_boy_boy |
-| 🇶🇦 | qa | 🌗 | last_quarter_moon |
-| 🛁 | bathtub | 🏦 | bank |
-| 📀 | dvd | ❗ | exclamation, heavy_exclamation_mark |
-| 🔥 | fire | 🏰 | european_castle |
-| 📿 | prayer_beads, dhikr_beads, rosary_beads | ⏭ | black_right_pointing_double_triangle_with_vertical_bar |
-| ✝ | latin_cross, christian_cross | 🏃 | runner, running |
-| 🍄 | mushroom | 💕 | two_hearts |
-| 🈺 | u55b6 | 🤕 | injured, head_bandage, head_bandaged, bandaged |
-| 🏍 | racing_motorcycle, motorcycle, motorbike | 👈 | point_left |
-| 👱 | person_with_blond_hair | 🐹 | hamster |
-| ⚡ | zap | 🚕 | taxi |
-| 💇 | haircut | 🐯 | tiger |
-| 🉑 | accept | ⏯ | black_right_pointing_triangle_with_double_vertical_bar |
-| 🐴 | horse | 💺 | seat |
-| 🔶 | large_orange_diamond | 🌾 | ear_of_rice |
-| 🐿 | chipmunk, squirrel | 🇷🇪 | re |
-| 🛐 | worship_building, worship_place, religious_building, religious_place | ⚰ | coffin, funeral, casket |
-| 🙍 | person_frowning | 🇷🇴 | ro |
-| ⏩ | fast_forward | 🚿 | shower |
-| 🇷🇸 | rs | 🍤 | fried_shrimp |
-| 🇷🇺 | ru | 🕢 | clock730 |
-| 🇷🇼 | rw | 💅 | nail_care |
-| ✊ | fist | 🇸🇦 | sa |
-| 😮 | open_mouth | 🇸🇧 | sb |
-| 🇸🇨 | sc | 🇸🇩 | sd |
-| 🇸🇪 | se | 🇸🇬 | sg |
-| 🌬 | wind_blowing_face, mother_nature, blowing_wind | 🇸🇮 | si |
-| 🌵 | cactus | 🇸🇰 | sk |
-| 🌡 | thermometer, hot_weather, temperature | 🇸🇱 | sl |
-| 🇸🇲 | sm | 🇸🇳 | sn |
-| 🆓 | free | ⁉️ | interrobang |
-| 🇸🇴 | so | 🔑 | key |
-| ✉️ | email, envelope | 🇸🇷 | sr |
-| 📆 | calendar | 🇸🇸 | ss |
-| 🇸🇹 | st | 🇸🇻 | sv |
-| ⭐ | star | 🐺 | wolf |
-| 😩 | weary | 🇸🇾 | sy |
-| 1️⃣ | one | 🇸🇿 | sz |
-| 🏣 | post_office | 🏸 | badminton |
-| 😾 | pouting_cat | 〽️ | part_alternation_mark |
-| ⛽ | fuelpump | 🇹🇨 | tc |
-| 🇹🇫 | tf | 🇹🇬 | tg |
-| 🍹 | tropical_drink | 🇹🇭 | th |
-| 🐛 | bug | 🇹🇯 | tj |
-| 🏏 | cricket | 🐟 | fish |
-| 🇹🇱 | tl | 🇹🇲 | tm |
-| 😼 | smirk_cat | 🇹🇳 | tn |
-| 👓 | eyeglasses | 🇹🇴 | to |
-| 🇹🇷 | tr | 😆 | laughing, satisfied |
-| 🇹🇹 | tt | 🤘 | horns_sign, rock_on, heavy_metal, devil_fingers |
-| 🚌 | bus | 🇹🇻 | tv |
-| 😵 | dizzy_face | 🎧 | headphones |
-| 🇹🇿 | tz | ⏬ | arrow_double_down |
-| 7️⃣ | seven | ❗ | exclamation, heavy_exclamation_mark |
-| 🚈 | light_rail | 🇺🇦 | ua |
-| 0️⃣ | zero | 🏍 | racing_motorcycle, motorcycle, motorbike |
-| 💞 | revolving_hearts | 🇺🇬 | ug |
-| 🌦 | white_sun_behind_cloud_rain | 🌥 | white_sun_behind_cloud |
-| 🍃 | leaves | 🚮 | put_litter_in_its_place |
-| ➿ | loop | 🔎 | mag_right |
-| 🆙 | up | 5️⃣ | five |
-| 🇺🇸 | us | 🔮 | crystal_ball |
-| 🏗 | building_construction, crane | 🈹 | u5272 |
-| 🇺🇾 | uy | 🇺🇿 | uz |
-| 🛌 | sleeping_accommodation | ✒️ | black_nib |
-| 🚼 | baby_symbol | 🏺 | amphora, jar, vase |
-| 🇻🇪 | ve | 🇻🇬 | vg |
-| ☄ | comet, light_beam, blue_beam | 🇻🇮 | vi |
-| 🌊 | ocean | 🙌 | raised_hands |
-| 🇻🇳 | vn | 🌕 | full_moon |
-| 🔽 | arrow_down_small | 🆚 | vs |
-| 🔻 | small_red_triangle_down | 🍇 | grapes |
-| 🇻🇺 | vu | ♿ | wheelchair |
-| 💶 | euro | 🌃 | night_with_stars |
-| 🕠 | clock530 | 👴 | older_man |
-| 🚾 | wc | 🏅 | sports_medal, sports_decoration |
-| 🍎 | apple | 🤖 | robot_face, bot_face |
-| 🏹 | bow_and_arrow, bow_arrow, archery | 🚨 | rotating_light |
-| 🏅 | sports_medal, sports_decoration | 😪 | sleepy |
-| 🇼🇸 | ws | 🛀 | bath |
-| 📌 | pushpin | 😷 | mask |
-| 🍲 | stew | 📑 | bookmark_tabs |
-| 🌷 | tulip | 🌱 | seedling |
-| 🛏 | bed, bedroom | 🎸 | guitar |
-| 🛬 | airplane_arriving, airplane_arrival, landing | 🗞 | rolled_up_newspaper, newspaper_delivery |
-| 🏕 | camping, campsite, tent | 🛐 | worship_building, worship_place, religious_building, religious_place |
-| 👩❤️👩 | couple_with_heart_woman_woman | 🖇 | linked_paperclips |
-| ⏰ | alarm_clock | 👞 | mans_shoe, shoe |
-| 🈳 | u7a7a | ⛓ | chains |
-| ⏹ | black_square_for_stop | 🐉 | dragon |
-| 🇾🇪 | ye | 🍨 | ice_cream |
-| 🔄 | arrows_counterclockwise | 🛣 | motorway, highway, road, interstate, freeway |
-| 😗 | kissing | 🍁 | maple_leaf |
-| 📎 | paperclip | 🎭 | performing_arts |
-| 🏉 | rugby_football | 🍆 | eggplant |
-| 💫 | dizzy | 👌 | ok_hand |
-| 🇿🇦 | za | 📜 | scroll |
-| 🖱 | computer_mouse, three_button_mouse | 🐐 | goat |
-| 📱 | iphone | 📩 | envelope_with_arrow |
-| 💃 | dancer | ☣ | biohazard, biohazard_symbol, biohazard_sign |
-| 📚 | books | 🇿🇲 | zm |
-| 🛢 | oil_drum | 🌐 | globe_with_meridians |
-| 🌸 | cherry_blossom | 👩👩👦 | family_woman_woman_boy |
-| 🇿🇼 | zw | 👐 | open_hands |
-| 🕞 | clock330 | 😖 | confounded |
-| 🏍 | racing_motorcycle, motorcycle, motorbike | ⚗ | alembic |
-| 👅 | tongue | ⛪ | church |
-| 🌇 | city_sunrise | 🚞 | mountain_railway |
-| 🗿 | moyai | ㊙️ | secret |
-| 🎆 | fireworks | 💎 | gem |
-| 👊 | facepunch, punch | 🎯 | dart |
-| 👻 | ghost | 🏎 | racing_car, formula_one, f1 |
-| 👂 | ear | ✍ | writing, writing_hand |
-| ❣ | exclamation_heart | 💈 | barber |
-| 💸 | money_with_wings | 😈 | smiling_imp |
-| 🛂 | passport_control | ⏺ | black_circle_for_record |
-| 👝 | pouch | 🆒 | cool |
-| ⚰ | coffin, funeral, casket | 🎢 | roller_coaster |
-| ⛩ | shinto_shrine, kami_no_michi | 🏓 | table_tennis, ping_pong |
-| 💰 | moneybag | 🎊 | confetti_ball |
-| 🕉 | om_symbol, pranava, aumkara, omkara | 📅 | date |
-| 🌤 | white_sun_small_cloud | 👗 | dress |
-| 🐌 | snail | 📤 | outbox_tray |
-| 📘 | blue_book | 🔹 | small_blue_diamond |
-| ♐ | sagittarius | 🔸 | small_orange_diamond |
-| 🍒 | cherries | 🌽 | corn |
-| 🔉 | sound | 😀 | grinning |
-| 🏂 | snowboarder | 👚 | womans_clothes |
-| 🚅 | bullettrain_front | 🍂 | fallen_leaf |
-| ➕ | heavy_plus_sign | 🦁 | lion_face, cute_lion, timid_lion |
-| 🏀 | basketball | 🐬 | dolphin, flipper |
-| 🐸 | frog | 🚘 | oncoming_automobile |
-| 📶 | signal_strength | 💆 | massage |
-| ☀️ | sunny | 📖 | book, open_book |
-| 📓 | notebook | 🗡 | dagger, dagger_knife, knife_weapon |
-| 🐨 | koala | 💼 | briefcase |
-| 👆 | point_up_2 | 👭 | two_women_holding_hands |
-| 🤒 | sick, ill, thermometer_face | 💐 | bouquet |
-| 🍠 | sweet_potato | 🛬 | airplane_arriving, airplane_arrival, landing |
-| 🚗 | car, red_car | 🐝 | bee, honeybee |
-| ⏸ | double_vertical_bar | ☢ | radioactive, radioactive_symbol, radioactive_sign |
-| 🔪 | hocho, knife | 🔼 | arrow_up_small |
-| ♊ | gemini | 💥 | boom, collision |
-| 🎹 | musical_keyboard | 🌯 | burrito, wrap |
-| 🔈 | speaker | 🔺 | small_red_triangle |
-| 💨 | dash | 🛳 | passenger_ship |
-| 🗃 | card_file_box | 🕜 | clock130 |
-| 🙀 | scream_cat | 🐍 | snake |
-| ㊗️ | congratulations | 🔗 | link |
-| 🏛 | classical_building | 👿 | imp |
-| 🏓 | table_tennis, ping_pong | 🗄 | file_cabinet |
-| 👁🗨 | eye_in_speech_bubble, i_am_a_witness | 🔵 | large_blue_circle |
-| 🏁 | checkered_flag | 🚗 | car, red_car |
-| 🚶 | walking | 🐱 | cat |
-| 🍻 | beers | 🚉 | station |
-| ♥️ | hearts | ♣️ | clubs |
-| 🐾 | feet, paw_prints | 🌿 | herb |
-| 📄 | page_facing_up | 👃 | nose |
-| 🌙 | crescent_moon | 🌁 | foggy |
-| 🏭 | factory | 🎈 | balloon |
-| 🚄 | bullettrain_side | 😥 | disappointed_relieved |
-| ⛱ | planted_umbrella, umbrella_on_ground | 🗑 | wastebasket |
-| 😨 | fearful | 🎛 | control_knobs |
-| 🏩 | love_hotel | ✍ | writing, writing_hand |
-| ♍ | virgo | 🗼 | tokyo_tower |
-| ⛷ | skier | ⬇️ | arrow_down |
-| 🕍 | synagogue, temple, jewish |
+| ©️ | copyright | © | copyright |
+| ®️ | registered | ® | registered |
+| ‼️ | bangbang | ‼ | bangbang |
+| ⁉️ | interrobang | ⁉ | interrobang |
+| ™️ | tm | ™ | tm |
+| ℹ️ | information_source | ℹ | information_source |
+| ↔️ | left_right_arrow | ↔ | left_right_arrow |
+| ↕️ | arrow_up_down | ↕ | arrow_up_down |
+| ↖️ | arrow_upper_left | ↖ | arrow_upper_left |
+| ↗️ | arrow_upper_right | ↗ | arrow_upper_right |
+| ↘️ | arrow_lower_right | ↘ | arrow_lower_right |
+| ↙️ | arrow_lower_left | ↙ | arrow_lower_left |
+| ↩️ | leftwards_arrow_with_hook | ↩ | leftwards_arrow_with_hook |
+| ↪️ | arrow_right_hook | ↪ | arrow_right_hook |
+| ⌚️ | watch | ⌚ | watch |
+| ⌛️ | hourglass | ⌛ | hourglass |
+| ⌨️ | keyboard | ⌨ | keyboard |
+| ⏏ | eject | ⏩ | fast_forward |
+| ⏪ | rewind | ⏫ | arrow_double_up |
+| ⏬ | arrow_double_down | ⏭ | black_right_pointing_double_triangle_with_vertical_bar |
+| ⏮ | black_left_pointing_double_triangle_with_vertical_bar | ⏯ | black_right_pointing_triangle_with_double_vertical_bar |
+| ⏰ | alarm_clock | ⏱ | stopwatch |
+| ⏲ | timer_clock | ⏳ | hourglass_flowing_sand |
+| ⏸ | double_vertical_bar | ⏹ | black_square_for_stop |
+| ⏺ | black_circle_for_record | Ⓜ️ | m |
+| Ⓜ | m | ▪️ | black_small_square |
+| ▪ | black_small_square | ▫️ | white_small_square |
+| ▫ | white_small_square | ▶️ | arrow_forward |
+| ▶ | arrow_forward | ◀️ | arrow_backward |
+| ◀ | arrow_backward | ◻️ | white_medium_square |
+| ◻ | white_medium_square | ◼️ | black_medium_square |
+| ◼ | black_medium_square | ◽️ | white_medium_small_square |
+| ◽ | white_medium_small_square | ◾️ | black_medium_small_square |
+| ◾ | black_medium_small_square | ☀️ | sunny |
+| ☀ | sunny | ☁️ | cloud |
+| ☁ | cloud | ☂️ | umbrella |
+| ☂ | umbrella | ☃️ | snowman |
+| ☃ | snowman | ☄️ | comet |
+| ☄ | comet | ☎️ | phone, telephone |
+| ☎ | phone, telephone | ☑️ | ballot_box_with_check |
+| ☑ | ballot_box_with_check | ☔️ | umbrella_with_rain_drops |
+| ☔ | umbrella_with_rain_drops | ☕️ | coffee |
+| ☕ | coffee | ☘ | shamrock |
+| ☝️ | point_up | ☝ | point_up |
+| ☠️ | skull_and_crossbones | ☠ | skull_and_crossbones |
+| ☢️ | radioactive_sign | ☢ | radioactive_sign |
+| ☣️ | biohazard_sign | ☣ | biohazard_sign |
+| ☦️ | orthodox_cross | ☦ | orthodox_cross |
+| ☪️ | star_and_crescent | ☪ | star_and_crescent |
+| ☮️ | peace_symbol | ☮ | peace_symbol |
+| ☯️ | yin_yang | ☯ | yin_yang |
+| ☸️ | wheel_of_dharma | ☸ | wheel_of_dharma |
+| ☹️ | white_frowning_face | ☹ | white_frowning_face |
+| ☺️ | relaxed | ☺ | relaxed |
+| ♈️ | aries | ♈ | aries |
+| ♉️ | taurus | ♉ | taurus |
+| ♊️ | gemini | ♊ | gemini |
+| ♋️ | cancer | ♋ | cancer |
+| ♌️ | leo | ♌ | leo |
+| ♍️ | virgo | ♍ | virgo |
+| ♎️ | libra | ♎ | libra |
+| ♏️ | scorpius | ♏ | scorpius |
+| ♐️ | sagittarius | ♐ | sagittarius |
+| ♑️ | capricorn | ♑ | capricorn |
+| ♒️ | aquarius | ♒ | aquarius |
+| ♓️ | pisces | ♓ | pisces |
+| ♠️ | spades | ♠ | spades |
+| ♣️ | clubs | ♣ | clubs |
+| ♥️ | hearts | ♥ | hearts |
+| ♦️ | diamonds | ♦ | diamonds |
+| ♨️ | hotsprings | ♨ | hotsprings |
+| ♻️ | recycle | ♻ | recycle |
+| ♿️ | wheelchair | ♿ | wheelchair |
+| ⚒ | hammer_and_pick | ⚓️ | anchor |
+| ⚓ | anchor | ⚔ | crossed_swords |
+| ⚖ | scales | ⚗ | alembic |
+| ⚙ | gear | ⚛ | atom_symbol |
+| ⚜ | fleur_de_lis | ⚠️ | warning |
+| ⚠ | warning | ⚡️ | zap |
+| ⚡ | zap | ⚪️ | white_circle |
+| ⚪ | white_circle | ⚫️ | black_circle |
+| ⚫ | black_circle | ⚰ | coffin |
+| ⚱ | funeral_urn | ⚽️ | soccer |
+| ⚽ | soccer | ⚾️ | baseball |
+| ⚾ | baseball | ⛄️ | snowman_without_snow |
+| ⛄ | snowman_without_snow | ⛅️ | partly_sunny |
+| ⛅ | partly_sunny | ⛈ | thunder_cloud_and_rain |
+| ⛎ | ophiuchus | ⛏ | pick |
+| ⛑ | helmet_with_white_cross | ⛓ | chains |
+| ⛔️ | no_entry | ⛔ | no_entry |
+| ⛩ | shinto_shrine | ⛪️ | church |
+| ⛪ | church | ⛰ | mountain |
+| ⛱ | umbrella_on_ground | ⛲️ | fountain |
+| ⛲ | fountain | ⛳️ | golf |
+| ⛳ | golf | ⛴ | ferry |
+| ⛵️ | boat, sailboat | ⛵ | boat, sailboat |
+| ⛷ | skier | ⛸ | ice_skate |
+| ⛹ | person_with_ball | ⛺️ | tent |
+| ⛺ | tent | ⛽️ | fuelpump |
+| ⛽ | fuelpump | ✂️ | scissors |
+| ✂ | scissors | ✅ | white_check_mark |
+| ✈️ | airplane | ✈ | airplane |
+| ✉️ | email, envelope | ✉ | email, envelope |
+| ✊ | fist | ✋ | hand, raised_hand |
+| ✌️ | v | ✌ | v |
+| ✍️ | writing_hand | ✍ | writing_hand |
+| ✏️ | pencil2 | ✏ | pencil2 |
+| ✒️ | black_nib | ✒ | black_nib |
+| ✔️ | heavy_check_mark | ✔ | heavy_check_mark |
+| ✖️ | heavy_multiplication_x | ✖ | heavy_multiplication_x |
+| ✝️ | latin_cross | ✝ | latin_cross |
+| ✡️ | star_of_david | ✡ | star_of_david |
+| ✨ | sparkles | ✳️ | eight_spoked_asterisk |
+| ✳ | eight_spoked_asterisk | ✴️ | eight_pointed_black_star |
+| ✴ | eight_pointed_black_star | ❄️ | snowflake |
+| ❄ | snowflake | ❇️ | sparkle |
+| ❇ | sparkle | ❌ | x |
+| ❎ | negative_squared_cross_mark | ❓ | question |
+| ❔ | grey_question | ❕ | grey_exclamation |
+| ❗️ | exclamation, heavy_exclamation_mark | ❗ | exclamation, heavy_exclamation_mark |
+| ❣️ | heavy_heart_exclamation_mark_ornament | ❣ | heavy_heart_exclamation_mark_ornament |
+| ❤️ | heart | ❤ | heart |
+| ➕ | heavy_plus_sign | ➖ | heavy_minus_sign |
+| ➗ | heavy_division_sign | ➡️ | arrow_right |
+| ➡ | arrow_right | ➰ | curly_loop |
+| ➿ | loop | ⤴️ | arrow_heading_up |
+| ⤴ | arrow_heading_up | ⤵️ | arrow_heading_down |
+| ⤵ | arrow_heading_down | ⬅️ | arrow_left |
+| ⬅ | arrow_left | ⬆️ | arrow_up |
+| ⬆ | arrow_up | ⬇️ | arrow_down |
+| ⬇ | arrow_down | ⬛️ | black_large_square |
+| ⬛ | black_large_square | ⬜️ | white_large_square |
+| ⬜ | white_large_square | ⭐️ | star |
+| ⭐ | star | ⭕️ | o |
+| ⭕ | o | 〰️ | wavy_dash |
+| 〰 | wavy_dash | 〽️ | part_alternation_mark |
+| 〽 | part_alternation_mark | ㊗️ | congratulations |
+| ㊗ | congratulations | ㊙️ | secret |
+| ㊙ | secret | 🀄️ | mahjong |
+| 🀄 | mahjong | 🃏 | black_joker |
+| 🅰️ | a | 🅰 | a |
+| 🅱️ | b | 🅱 | b |
+| 🅾️ | o2 | 🅾 | o2 |
+| 🅿️ | parking | 🅿 | parking |
+| 🆎 | ab | 🆑 | cl |
+| 🆒 | cool | 🆓 | free |
+| 🆔 | id | 🆕 | new |
+| 🆖 | ng | 🆗 | ok |
+| 🆘 | sos | 🆙 | up |
+| 🆚 | vs | 🈁 | koko |
+| 🈂️ | sa | 🈂 | sa |
+| 🈚️ | u7121 | 🈚 | u7121 |
+| 🈯️ | u6307 | 🈯 | u6307 |
+| 🈲 | u7981 | 🈳 | u7a7a |
+| 🈴 | u5408 | 🈵 | u6e80 |
+| 🈶 | u6709 | 🈷️ | u6708 |
+| 🈷 | u6708 | 🈸 | u7533 |
+| 🈹 | u5272 | 🈺 | u55b6 |
+| 🉐 | ideograph_advantage | 🉑 | accept |
+| 🌀 | cyclone | 🌁 | foggy |
+| 🌂 | closed_umbrella | 🌃 | night_with_stars |
+| 🌄 | sunrise_over_mountains | 🌅 | sunrise |
+| 🌆 | city_sunset | 🌇 | city_sunrise |
+| 🌈 | rainbow | 🌉 | bridge_at_night |
+| 🌊 | ocean | 🌋 | volcano |
+| 🌌 | milky_way | 🌍 | earth_africa |
+| 🌎 | earth_americas | 🌏 | earth_asia |
+| 🌐 | globe_with_meridians | 🌑 | new_moon |
+| 🌒 | waxing_crescent_moon | 🌓 | first_quarter_moon |
+| 🌔 | moon, waxing_gibbous_moon | 🌕 | full_moon |
+| 🌖 | waning_gibbous_moon | 🌗 | last_quarter_moon |
+| 🌘 | waning_crescent_moon | 🌙 | crescent_moon |
+| 🌚 | new_moon_with_face | 🌛 | first_quarter_moon_with_face |
+| 🌜 | last_quarter_moon_with_face | 🌝 | full_moon_with_face |
+| 🌞 | sun_with_face | 🌟 | star2 |
+| 🌠 | stars | 🌡 | thermometer |
+| 🌤 | mostly_sunny, sun_small_cloud | 🌥 | barely_sunny, sun_behind_cloud |
+| 🌦 | partly_sunny_rain, sun_behind_rain_cloud | 🌧 | rain_cloud |
+| 🌨 | snow_cloud | 🌩 | lightning, lightning_cloud |
+| 🌪 | tornado, tornado_cloud | 🌫 | fog |
+| 🌬 | wind_blowing_face | 🌭 | hotdog |
+| 🌮 | taco | 🌯 | burrito |
+| 🌰 | chestnut | 🌱 | seedling |
+| 🌲 | evergreen_tree | 🌳 | deciduous_tree |
+| 🌴 | palm_tree | 🌵 | cactus |
+| 🌶 | hot_pepper | 🌷 | tulip |
+| 🌸 | cherry_blossom | 🌹 | rose |
+| 🌺 | hibiscus | 🌻 | sunflower |
+| 🌼 | blossom | 🌽 | corn |
+| 🌾 | ear_of_rice | 🌿 | herb |
+| 🍀 | four_leaf_clover | 🍁 | maple_leaf |
+| 🍂 | fallen_leaf | 🍃 | leaves |
+| 🍄 | mushroom | 🍅 | tomato |
+| 🍆 | eggplant | 🍇 | grapes |
+| 🍈 | melon | 🍉 | watermelon |
+| 🍊 | tangerine | 🍋 | lemon |
+| 🍌 | banana | 🍍 | pineapple |
+| 🍎 | apple | 🍏 | green_apple |
+| 🍐 | pear | 🍑 | peach |
+| 🍒 | cherries | 🍓 | strawberry |
+| 🍔 | hamburger | 🍕 | pizza |
+| 🍖 | meat_on_bone | 🍗 | poultry_leg |
+| 🍘 | rice_cracker | 🍙 | rice_ball |
+| 🍚 | rice | 🍛 | curry |
+| 🍜 | ramen | 🍝 | spaghetti |
+| 🍞 | bread | 🍟 | fries |
+| 🍠 | sweet_potato | 🍡 | dango |
+| 🍢 | oden | 🍣 | sushi |
+| 🍤 | fried_shrimp | 🍥 | fish_cake |
+| 🍦 | icecream | 🍧 | shaved_ice |
+| 🍨 | ice_cream | 🍩 | doughnut |
+| 🍪 | cookie | 🍫 | chocolate_bar |
+| 🍬 | candy | 🍭 | lollipop |
+| 🍮 | custard | 🍯 | honey_pot |
+| 🍰 | cake | 🍱 | bento |
+| 🍲 | stew | 🍳 | egg |
+| 🍴 | fork_and_knife | 🍵 | tea |
+| 🍶 | sake | 🍷 | wine_glass |
+| 🍸 | cocktail | 🍹 | tropical_drink |
+| 🍺 | beer | 🍻 | beers |
+| 🍼 | baby_bottle | 🍽 | knife_fork_plate |
+| 🍾 | champagne | 🍿 | popcorn |
+| 🎀 | ribbon | 🎁 | gift |
+| 🎂 | birthday | 🎃 | jack_o_lantern |
+| 🎄 | christmas_tree | 🎅 | santa |
+| 🎆 | fireworks | 🎇 | sparkler |
+| 🎈 | balloon | 🎉 | tada |
+| 🎊 | confetti_ball | 🎋 | tanabata_tree |
+| 🎌 | crossed_flags | 🎍 | bamboo |
+| 🎎 | dolls | 🎏 | flags |
+| 🎐 | wind_chime | 🎑 | rice_scene |
+| 🎒 | school_satchel | 🎓 | mortar_board |
+| 🎖 | medal | 🎗 | reminder_ribbon |
+| 🎙 | studio_microphone | 🎚 | level_slider |
+| 🎛 | control_knobs | 🎞 | film_frames |
+| 🎟 | admission_tickets | 🎠 | carousel_horse |
+| 🎡 | ferris_wheel | 🎢 | roller_coaster |
+| 🎣 | fishing_pole_and_fish | 🎤 | microphone |
+| 🎥 | movie_camera | 🎦 | cinema |
+| 🎧 | headphones | 🎨 | art |
+| 🎩 | tophat | 🎪 | circus_tent |
+| 🎫 | ticket | 🎬 | clapper |
+| 🎭 | performing_arts | 🎮 | video_game |
+| 🎯 | dart | 🎰 | slot_machine |
+| 🎱 | 8ball | 🎲 | game_die |
+| 🎳 | bowling | 🎴 | flower_playing_cards |
+| 🎵 | musical_note | 🎶 | notes |
+| 🎷 | saxophone | 🎸 | guitar |
+| 🎹 | musical_keyboard | 🎺 | trumpet |
+| 🎻 | violin | 🎼 | musical_score |
+| 🎽 | running_shirt_with_sash | 🎾 | tennis |
+| 🎿 | ski | 🏀 | basketball |
+| 🏁 | checkered_flag | 🏂 | snowboarder |
+| 🏃 | runner, running | 🏄 | surfer |
+| 🏅 | sports_medal | 🏆 | trophy |
+| 🏇 | horse_racing | 🏈 | football |
+| 🏉 | rugby_football | 🏊 | swimmer |
+| 🏋 | weight_lifter | 🏌 | golfer |
+| 🏍 | racing_motorcycle | 🏎 | racing_car |
+| 🏏 | cricket_bat_and_ball | 🏐 | volleyball |
+| 🏑 | field_hockey_stick_and_ball | 🏒 | ice_hockey_stick_and_puck |
+| 🏓 | table_tennis_paddle_and_ball | 🏔 | snow_capped_mountain |
+| 🏕 | camping | 🏖 | beach_with_umbrella |
+| 🏗 | building_construction | 🏘 | house_buildings |
+| 🏙 | cityscape | 🏚 | derelict_house_building |
+| 🏛 | classical_building | 🏜 | desert |
+| 🏝 | desert_island | 🏞 | national_park |
+| 🏟 | stadium | 🏠 | house |
+| 🏡 | house_with_garden | 🏢 | office |
+| 🏣 | post_office | 🏤 | european_post_office |
+| 🏥 | hospital | 🏦 | bank |
+| 🏧 | atm | 🏨 | hotel |
+| 🏩 | love_hotel | 🏪 | convenience_store |
+| 🏫 | school | 🏬 | department_store |
+| 🏭 | factory | 🏮 | izakaya_lantern, lantern |
+| 🏯 | japanese_castle | 🏰 | european_castle |
+| 🏳 | waving_white_flag | 🏴 | waving_black_flag |
+| 🏵 | rosette | 🏷 | label |
+| 🏸 | badminton_racquet_and_shuttlecock | 🏹 | bow_and_arrow |
+| 🏺 | amphora | 🏻 | skin-tone-2 |
+| 🏼 | skin-tone-3 | 🏽 | skin-tone-4 |
+| 🏾 | skin-tone-5 | 🏿 | skin-tone-6 |
+| 🐀 | rat | 🐁 | mouse2 |
+| 🐂 | ox | 🐃 | water_buffalo |
+| 🐄 | cow2 | 🐅 | tiger2 |
+| 🐆 | leopard | 🐇 | rabbit2 |
+| 🐈 | cat2 | 🐉 | dragon |
+| 🐊 | crocodile | 🐋 | whale2 |
+| 🐌 | snail | 🐍 | snake |
+| 🐎 | racehorse | 🐏 | ram |
+| 🐐 | goat | 🐑 | sheep |
+| 🐒 | monkey | 🐓 | rooster |
+| 🐔 | chicken | 🐕 | dog2 |
+| 🐖 | pig2 | 🐗 | boar |
+| 🐘 | elephant | 🐙 | octopus |
+| 🐚 | shell | 🐛 | bug |
+| 🐜 | ant | 🐝 | bee, honeybee |
+| 🐞 | beetle | 🐟 | fish |
+| 🐠 | tropical_fish | 🐡 | blowfish |
+| 🐢 | turtle | 🐣 | hatching_chick |
+| 🐤 | baby_chick | 🐥 | hatched_chick |
+| 🐦 | bird | 🐧 | penguin |
+| 🐨 | koala | 🐩 | poodle |
+| 🐪 | dromedary_camel | 🐫 | camel |
+| 🐬 | dolphin, flipper | 🐭 | mouse |
+| 🐮 | cow | 🐯 | tiger |
+| 🐰 | rabbit | 🐱 | cat |
+| 🐲 | dragon_face | 🐳 | whale |
+| 🐴 | horse | 🐵 | monkey_face |
+| 🐶 | dog | 🐷 | pig |
+| 🐸 | frog | 🐹 | hamster |
+| 🐺 | wolf | 🐻 | bear |
+| 🐼 | panda_face | 🐽 | pig_nose |
+| 🐾 | feet, paw_prints | 🐿 | chipmunk |
+| 👀 | eyes | 👁 | eye |
+| 👂 | ear | 👃 | nose |
+| 👄 | lips | 👅 | tongue |
+| 👆 | point_up_2 | 👇 | point_down |
+| 👈 | point_left | 👉 | point_right |
+| 👊 | facepunch, punch | 👋 | wave |
+| 👌 | ok_hand | 👍 | +1, thumbsup |
+| 👎 | -1, thumbsdown | 👏 | clap |
+| 👐 | open_hands | 👑 | crown |
+| 👒 | womans_hat | 👓 | eyeglasses |
+| 👔 | necktie | 👕 | shirt, tshirt |
+| 👖 | jeans | 👗 | dress |
+| 👘 | kimono | 👙 | bikini |
+| 👚 | womans_clothes | 👛 | purse |
+| 👜 | handbag | 👝 | pouch |
+| 👞 | mans_shoe, shoe | 👟 | athletic_shoe |
+| 👠 | high_heel | 👡 | sandal |
+| 👢 | boot | 👣 | footprints |
+| 👤 | bust_in_silhouette | 👥 | busts_in_silhouette |
+| 👦 | boy | 👧 | girl |
+| 👨 | man | 👩 | woman |
+| 👨‍👩‍👦 | family, man-woman-boy | 👪 | family, man-woman-boy |
+| 👫 | couple, man_and_woman_holding_hands | 👬 | two_men_holding_hands |
+| 👭 | two_women_holding_hands | 👮 | cop |
+| 👯 | dancers | 👰 | bride_with_veil |
+| 👱 | person_with_blond_hair | 👲 | man_with_gua_pi_mao |
+| 👳 | man_with_turban | 👴 | older_man |
+| 👵 | older_woman | 👶 | baby |
+| 👷 | construction_worker | 👸 | princess |
+| 👹 | japanese_ogre | 👺 | japanese_goblin |
+| 👻 | ghost | 👼 | angel |
+| 👽 | alien | 👾 | space_invader |
+| 👿 | imp | 💀 | skull |
+| 💁 | information_desk_person | 💂 | guardsman |
+| 💃 | dancer | 💄 | lipstick |
+| 💅 | nail_care | 💆 | massage |
+| 💇 | haircut | 💈 | barber |
+| 💉 | syringe | 💊 | pill |
+| 💋 | kiss | 💌 | love_letter |
+| 💍 | ring | 💎 | gem |
+| 💏 | couplekiss | 💐 | bouquet |
+| 💑 | couple_with_heart | 💒 | wedding |
+| 💓 | heartbeat | 💔 | broken_heart |
+| 💕 | two_hearts | 💖 | sparkling_heart |
+| 💗 | heartpulse | 💘 | cupid |
+| 💙 | blue_heart | 💚 | green_heart |
+| 💛 | yellow_heart | 💜 | purple_heart |
+| 💝 | gift_heart | 💞 | revolving_hearts |
+| 💟 | heart_decoration | 💠 | diamond_shape_with_a_dot_inside |
+| 💡 | bulb | 💢 | anger |
+| 💣 | bomb | 💤 | zzz |
+| 💥 | boom, collision | 💦 | sweat_drops |
+| 💧 | droplet | 💨 | dash |
+| 💩 | hankey, poop, shit | 💪 | muscle |
+| 💫 | dizzy | 💬 | speech_balloon |
+| 💭 | thought_balloon | 💮 | white_flower |
+| 💯 | 100 | 💰 | moneybag |
+| 💱 | currency_exchange | 💲 | heavy_dollar_sign |
+| 💳 | credit_card | 💴 | yen |
+| 💵 | dollar | 💶 | euro |
+| 💷 | pound | 💸 | money_with_wings |
+| 💹 | chart | 💺 | seat |
+| 💻 | computer | 💼 | briefcase |
+| 💽 | minidisc | 💾 | floppy_disk |
+| 💿 | cd | 📀 | dvd |
+| 📁 | file_folder | 📂 | open_file_folder |
+| 📃 | page_with_curl | 📄 | page_facing_up |
+| 📅 | date | 📆 | calendar |
+| 📇 | card_index | 📈 | chart_with_upwards_trend |
+| 📉 | chart_with_downwards_trend | 📊 | bar_chart |
+| 📋 | clipboard | 📌 | pushpin |
+| 📍 | round_pushpin | 📎 | paperclip |
+| 📏 | straight_ruler | 📐 | triangular_ruler |
+| 📑 | bookmark_tabs | 📒 | ledger |
+| 📓 | notebook | 📔 | notebook_with_decorative_cover |
+| 📕 | closed_book | 📖 | book, open_book |
+| 📗 | green_book | 📘 | blue_book |
+| 📙 | orange_book | 📚 | books |
+| 📛 | name_badge | 📜 | scroll |
+| 📝 | memo, pencil | 📞 | telephone_receiver |
+| 📟 | pager | 📠 | fax |
+| 📡 | satellite_antenna | 📢 | loudspeaker |
+| 📣 | mega | 📤 | outbox_tray |
+| 📥 | inbox_tray | 📦 | package |
+| 📧 | e-mail | 📨 | incoming_envelope |
+| 📩 | envelope_with_arrow | 📪 | mailbox_closed |
+| 📫 | mailbox | 📬 | mailbox_with_mail |
+| 📭 | mailbox_with_no_mail | 📮 | postbox |
+| 📯 | postal_horn | 📰 | newspaper |
+| 📱 | iphone | 📲 | calling |
+| 📳 | vibration_mode | 📴 | mobile_phone_off |
+| 📵 | no_mobile_phones | 📶 | signal_strength |
+| 📷 | camera | 📸 | camera_with_flash |
+| 📹 | video_camera | 📺 | tv |
+| 📻 | radio | 📼 | vhs |
+| 📽 | film_projector | 📿 | prayer_beads |
+| 🔀 | twisted_rightwards_arrows | 🔁 | repeat |
+| 🔂 | repeat_one | 🔃 | arrows_clockwise |
+| 🔄 | arrows_counterclockwise | 🔅 | low_brightness |
+| 🔆 | high_brightness | 🔇 | mute |
+| 🔈 | speaker | 🔉 | sound |
+| 🔊 | loud_sound | 🔋 | battery |
+| 🔌 | electric_plug | 🔍 | mag |
+| 🔎 | mag_right | 🔏 | lock_with_ink_pen |
+| 🔐 | closed_lock_with_key | 🔑 | key |
+| 🔒 | lock | 🔓 | unlock |
+| 🔔 | bell | 🔕 | no_bell |
+| 🔖 | bookmark | 🔗 | link |
+| 🔘 | radio_button | 🔙 | back |
+| 🔚 | end | 🔛 | on |
+| 🔜 | soon | 🔝 | top |
+| 🔞 | underage | 🔟 | keycap_ten |
+| 🔠 | capital_abcd | 🔡 | abcd |
+| 🔢 | 1234 | 🔣 | symbols |
+| 🔤 | abc | 🔥 | fire |
+| 🔦 | flashlight | 🔧 | wrench |
+| 🔨 | hammer | 🔩 | nut_and_bolt |
+| 🔪 | hocho, knife | 🔫 | gun |
+| 🔬 | microscope | 🔭 | telescope |
+| 🔮 | crystal_ball | 🔯 | six_pointed_star |
+| 🔰 | beginner | 🔱 | trident |
+| 🔲 | black_square_button | 🔳 | white_square_button |
+| 🔴 | red_circle | 🔵 | large_blue_circle |
+| 🔶 | large_orange_diamond | 🔷 | large_blue_diamond |
+| 🔸 | small_orange_diamond | 🔹 | small_blue_diamond |
+| 🔺 | small_red_triangle | 🔻 | small_red_triangle_down |
+| 🔼 | arrow_up_small | 🔽 | arrow_down_small |
+| 🕉 | om_symbol | 🕊 | dove_of_peace |
+| 🕋 | kaaba | 🕌 | mosque |
+| 🕍 | synagogue | 🕎 | menorah_with_nine_branches |
+| 🕐 | clock1 | 🕑 | clock2 |
+| 🕒 | clock3 | 🕓 | clock4 |
+| 🕔 | clock5 | 🕕 | clock6 |
+| 🕖 | clock7 | 🕗 | clock8 |
+| 🕘 | clock9 | 🕙 | clock10 |
+| 🕚 | clock11 | 🕛 | clock12 |
+| 🕜 | clock130 | 🕝 | clock230 |
+| 🕞 | clock330 | 🕟 | clock430 |
+| 🕠 | clock530 | 🕡 | clock630 |
+| 🕢 | clock730 | 🕣 | clock830 |
+| 🕤 | clock930 | 🕥 | clock1030 |
+| 🕦 | clock1130 | 🕧 | clock1230 |
+| 🕯 | candle | 🕰 | mantelpiece_clock |
+| 🕳 | hole | 🕴 | man_in_business_suit_levitating |
+| 🕵 | sleuth_or_spy | 🕶 | dark_sunglasses |
+| 🕷 | spider | 🕸 | spider_web |
+| 🕹 | joystick | 🖇 | linked_paperclips |
+| 🖊 | lower_left_ballpoint_pen | 🖋 | lower_left_fountain_pen |
+| 🖌 | lower_left_paintbrush | 🖍 | lower_left_crayon |
+| 🖐 | raised_hand_with_fingers_splayed | 🖕 | middle_finger, reversed_hand_with_middle_finger_extended |
+| 🖖 | spock-hand | 🖥 | desktop_computer |
+| 🖨 | printer | 🖱 | three_button_mouse |
+| 🖲 | trackball | 🖼 | frame_with_picture |
+| 🗂 | card_index_dividers | 🗃 | card_file_box |
+| 🗄 | file_cabinet | 🗑 | wastebasket |
+| 🗒 | spiral_note_pad | 🗓 | spiral_calendar_pad |
+| 🗜 | compression | 🗝 | old_key |
+| 🗞 | rolled_up_newspaper | 🗡 | dagger_knife |
+| 🗣 | speaking_head_in_silhouette | 🗨 | left_speech_bubble |
+| 🗯 | right_anger_bubble | 🗳 | ballot_box_with_ballot |
+| 🗺 | world_map | 🗻 | mount_fuji |
+| 🗼 | tokyo_tower | 🗽 | statue_of_liberty |
+| 🗾 | japan | 🗿 | moyai |
+| 😀 | grinning | 😁 | grin |
+| 😂 | joy | 😃 | smiley |
+| 😄 | smile | 😅 | sweat_smile |
+| 😆 | laughing, satisfied | 😇 | innocent |
+| 😈 | smiling_imp | 😉 | wink |
+| 😊 | blush | 😋 | yum |
+| 😌 | relieved | 😍 | heart_eyes |
+| 😎 | sunglasses | 😏 | smirk |
+| 😐 | neutral_face | 😑 | expressionless |
+| 😒 | unamused | 😓 | sweat |
+| 😔 | pensive | 😕 | confused |
+| 😖 | confounded | 😗 | kissing |
+| 😘 | kissing_heart | 😙 | kissing_smiling_eyes |
+| 😚 | kissing_closed_eyes | 😛 | stuck_out_tongue |
+| 😜 | stuck_out_tongue_winking_eye | 😝 | stuck_out_tongue_closed_eyes |
+| 😞 | disappointed | 😟 | worried |
+| 😠 | angry | 😡 | rage |
+| 😢 | cry | 😣 | persevere |
+| 😤 | triumph | 😥 | disappointed_relieved |
+| 😦 | frowning | 😧 | anguished |
+| 😨 | fearful | 😩 | weary |
+| 😪 | sleepy | 😫 | tired_face |
+| 😬 | grimacing | 😭 | sob |
+| 😮 | open_mouth | 😯 | hushed |
+| 😰 | cold_sweat | 😱 | scream |
+| 😲 | astonished | 😳 | flushed |
+| 😴 | sleeping | 😵 | dizzy_face |
+| 😶 | no_mouth | 😷 | mask |
+| 😸 | smile_cat | 😹 | joy_cat |
+| 😺 | smiley_cat | 😻 | heart_eyes_cat |
+| 😼 | smirk_cat | 😽 | kissing_cat |
+| 😾 | pouting_cat | 😿 | crying_cat_face |
+| 🙀 | scream_cat | 🙁 | slightly_frowning_face |
+| 🙂 | slightly_smiling_face | 🙃 | upside_down_face |
+| 🙄 | face_with_rolling_eyes | 🙅 | no_good |
+| 🙆 | ok_woman | 🙇 | bow |
+| 🙈 | see_no_evil | 🙉 | hear_no_evil |
+| 🙊 | speak_no_evil | 🙋 | raising_hand |
+| 🙌 | raised_hands | 🙍 | person_frowning |
+| 🙎 | person_with_pouting_face | 🙏 | pray |
+| 🚀 | rocket | 🚁 | helicopter |
+| 🚂 | steam_locomotive | 🚃 | railway_car |
+| 🚄 | bullettrain_side | 🚅 | bullettrain_front |
+| 🚆 | train2 | 🚇 | metro |
+| 🚈 | light_rail | 🚉 | station |
+| 🚊 | tram | 🚋 | train |
+| 🚌 | bus | 🚍 | oncoming_bus |
+| 🚎 | trolleybus | 🚏 | busstop |
+| 🚐 | minibus | 🚑 | ambulance |
+| 🚒 | fire_engine | 🚓 | police_car |
+| 🚔 | oncoming_police_car | 🚕 | taxi |
+| 🚖 | oncoming_taxi | 🚗 | car, red_car |
+| 🚘 | oncoming_automobile | 🚙 | blue_car |
+| 🚚 | truck | 🚛 | articulated_lorry |
+| 🚜 | tractor | 🚝 | monorail |
+| 🚞 | mountain_railway | 🚟 | suspension_railway |
+| 🚠 | mountain_cableway | 🚡 | aerial_tramway |
+| 🚢 | ship | 🚣 | rowboat |
+| 🚤 | speedboat | 🚥 | traffic_light |
+| 🚦 | vertical_traffic_light | 🚧 | construction |
+| 🚨 | rotating_light | 🚩 | triangular_flag_on_post |
+| 🚪 | door | 🚫 | no_entry_sign |
+| 🚬 | smoking | 🚭 | no_smoking |
+| 🚮 | put_litter_in_its_place | 🚯 | do_not_litter |
+| 🚰 | potable_water | 🚱 | non-potable_water |
+| 🚲 | bike | 🚳 | no_bicycles |
+| 🚴 | bicyclist | 🚵 | mountain_bicyclist |
+| 🚶 | walking | 🚷 | no_pedestrians |
+| 🚸 | children_crossing | 🚹 | mens |
+| 🚺 | womens | 🚻 | restroom |
+| 🚼 | baby_symbol | 🚽 | toilet |
+| 🚾 | wc | 🚿 | shower |
+| 🛀 | bath | 🛁 | bathtub |
+| 🛂 | passport_control | 🛃 | customs |
+| 🛄 | baggage_claim | 🛅 | left_luggage |
+| 🛋 | couch_and_lamp | 🛌 | sleeping_accommodation |
+| 🛍 | shopping_bags | 🛎 | bellhop_bell |
+| 🛏 | bed | 🛐 | place_of_worship |
+| 🛠 | hammer_and_wrench | 🛡 | shield |
+| 🛢 | oil_drum | 🛣 | motorway |
+| 🛤 | railway_track | 🛥 | motor_boat |
+| 🛩 | small_airplane | 🛫 | airplane_departure |
+| 🛬 | airplane_arriving | 🛰 | satellite |
+| 🛳 | passenger_ship | 🤐 | zipper_mouth_face |
+| 🤑 | money_mouth_face | 🤒 | face_with_thermometer |
+| 🤓 | nerd_face | 🤔 | thinking_face |
+| 🤕 | face_with_head_bandage | 🤖 | robot_face |
+| 🤗 | hugging_face | 🤘 | the_horns, sign_of_the_horns |
+| 🦀 | crab | 🦁 | lion_face |
+| 🦂 | scorpion | 🦃 | turkey |
+| 🦄 | unicorn_face | 🧀 | cheese_wedge |
+| #️⃣ | hash | #⃣ | hash |
+| *⃣ | keycap_star | 0️⃣ | zero |
+| 0⃣ | zero | 1️⃣ | one |
+| 1⃣ | one | 2️⃣ | two |
+| 2⃣ | two | 3️⃣ | three |
+| 3⃣ | three | 4️⃣ | four |
+| 4⃣ | four | 5️⃣ | five |
+| 5⃣ | five | 6️⃣ | six |
+| 6⃣ | six | 7️⃣ | seven |
+| 7⃣ | seven | 8️⃣ | eight |
+| 8⃣ | eight | 9️⃣ | nine |
+| 9⃣ | nine | 🇦🇨 | flag-ac |
+| 🇦🇩 | flag-ad | 🇦🇪 | flag-ae |
+| 🇦🇫 | flag-af | 🇦🇬 | flag-ag |
+| 🇦🇮 | flag-ai | 🇦🇱 | flag-al |
+| 🇦🇲 | flag-am | 🇦🇴 | flag-ao |
+| 🇦🇶 | flag-aq | 🇦🇷 | flag-ar |
+| 🇦🇸 | flag-as | 🇦🇹 | flag-at |
+| 🇦🇺 | flag-au | 🇦🇼 | flag-aw |
+| 🇦🇽 | flag-ax | 🇦🇿 | flag-az |
+| 🇧🇦 | flag-ba | 🇧🇧 | flag-bb |
+| 🇧🇩 | flag-bd | 🇧🇪 | flag-be |
+| 🇧🇫 | flag-bf | 🇧🇬 | flag-bg |
+| 🇧🇭 | flag-bh | 🇧🇮 | flag-bi |
+| 🇧🇯 | flag-bj | 🇧🇱 | flag-bl |
+| 🇧🇲 | flag-bm | 🇧🇳 | flag-bn |
+| 🇧🇴 | flag-bo | 🇧🇶 | flag-bq |
+| 🇧🇷 | flag-br | 🇧🇸 | flag-bs |
+| 🇧🇹 | flag-bt | 🇧🇻 | flag-bv |
+| 🇧🇼 | flag-bw | 🇧🇾 | flag-by |
+| 🇧🇿 | flag-bz | 🇨🇦 | flag-ca |
+| 🇨🇨 | flag-cc | 🇨🇩 | flag-cd |
+| 🇨🇫 | flag-cf | 🇨🇬 | flag-cg |
+| 🇨🇭 | flag-ch | 🇨🇮 | flag-ci |
+| 🇨🇰 | flag-ck | 🇨🇱 | flag-cl |
+| 🇨🇲 | flag-cm | 🇨🇳 | flag-cn, cn |
+| 🇨🇴 | flag-co | 🇨🇵 | flag-cp |
+| 🇨🇷 | flag-cr | 🇨🇺 | flag-cu |
+| 🇨🇻 | flag-cv | 🇨🇼 | flag-cw |
+| 🇨🇽 | flag-cx | 🇨🇾 | flag-cy |
+| 🇨🇿 | flag-cz | 🇩🇪 | flag-de, de |
+| 🇩🇬 | flag-dg | 🇩🇯 | flag-dj |
+| 🇩🇰 | flag-dk | 🇩🇲 | flag-dm |
+| 🇩🇴 | flag-do | 🇩🇿 | flag-dz |
+| 🇪🇦 | flag-ea | 🇪🇨 | flag-ec |
+| 🇪🇪 | flag-ee | 🇪🇬 | flag-eg |
+| 🇪🇭 | flag-eh | 🇪🇷 | flag-er |
+| 🇪🇸 | flag-es, es | 🇪🇹 | flag-et |
+| 🇪🇺 | flag-eu | 🇫🇮 | flag-fi |
+| 🇫🇯 | flag-fj | 🇫🇰 | flag-fk |
+| 🇫🇲 | flag-fm | 🇫🇴 | flag-fo |
+| 🇫🇷 | flag-fr, fr | 🇬🇦 | flag-ga |
+| 🇬🇧 | flag-gb, gb, uk | 🇬🇩 | flag-gd |
+| 🇬🇪 | flag-ge | 🇬🇫 | flag-gf |
+| 🇬🇬 | flag-gg | 🇬🇭 | flag-gh |
+| 🇬🇮 | flag-gi | 🇬🇱 | flag-gl |
+| 🇬🇲 | flag-gm | 🇬🇳 | flag-gn |
+| 🇬🇵 | flag-gp | 🇬🇶 | flag-gq |
+| 🇬🇷 | flag-gr | 🇬🇸 | flag-gs |
+| 🇬🇹 | flag-gt | 🇬🇺 | flag-gu |
+| 🇬🇼 | flag-gw | 🇬🇾 | flag-gy |
+| 🇭🇰 | flag-hk | 🇭🇲 | flag-hm |
+| 🇭🇳 | flag-hn | 🇭🇷 | flag-hr |
+| 🇭🇹 | flag-ht | 🇭🇺 | flag-hu |
+| 🇮🇨 | flag-ic | 🇮🇩 | flag-id |
+| 🇮🇪 | flag-ie | 🇮🇱 | flag-il |
+| 🇮🇲 | flag-im | 🇮🇳 | flag-in |
+| 🇮🇴 | flag-io | 🇮🇶 | flag-iq |
+| 🇮🇷 | flag-ir | 🇮🇸 | flag-is |
+| 🇮🇹 | flag-it, it | 🇯🇪 | flag-je |
+| 🇯🇲 | flag-jm | 🇯🇴 | flag-jo |
+| 🇯🇵 | flag-jp, jp | 🇰🇪 | flag-ke |
+| 🇰🇬 | flag-kg | 🇰🇭 | flag-kh |
+| 🇰🇮 | flag-ki | 🇰🇲 | flag-km |
+| 🇰🇳 | flag-kn | 🇰🇵 | flag-kp |
+| 🇰🇷 | flag-kr, kr | 🇰🇼 | flag-kw |
+| 🇰🇾 | flag-ky | 🇰🇿 | flag-kz |
+| 🇱🇦 | flag-la | 🇱🇧 | flag-lb |
+| 🇱🇨 | flag-lc | 🇱🇮 | flag-li |
+| 🇱🇰 | flag-lk | 🇱🇷 | flag-lr |
+| 🇱🇸 | flag-ls | 🇱🇹 | flag-lt |
+| 🇱🇺 | flag-lu | 🇱🇻 | flag-lv |
+| 🇱🇾 | flag-ly | 🇲🇦 | flag-ma |
+| 🇲🇨 | flag-mc | 🇲🇩 | flag-md |
+| 🇲🇪 | flag-me | 🇲🇫 | flag-mf |
+| 🇲🇬 | flag-mg | 🇲🇭 | flag-mh |
+| 🇲🇰 | flag-mk | 🇲🇱 | flag-ml |
+| 🇲🇲 | flag-mm | 🇲🇳 | flag-mn |
+| 🇲🇴 | flag-mo | 🇲🇵 | flag-mp |
+| 🇲🇶 | flag-mq | 🇲🇷 | flag-mr |
+| 🇲🇸 | flag-ms | 🇲🇹 | flag-mt |
+| 🇲🇺 | flag-mu | 🇲🇻 | flag-mv |
+| 🇲🇼 | flag-mw | 🇲🇽 | flag-mx |
+| 🇲🇾 | flag-my | 🇲🇿 | flag-mz |
+| 🇳🇦 | flag-na | 🇳🇨 | flag-nc |
+| 🇳🇪 | flag-ne | 🇳🇫 | flag-nf |
+| 🇳🇬 | flag-ng | 🇳🇮 | flag-ni |
+| 🇳🇱 | flag-nl | 🇳🇴 | flag-no |
+| 🇳🇵 | flag-np | 🇳🇷 | flag-nr |
+| 🇳🇺 | flag-nu | 🇳🇿 | flag-nz |
+| 🇴🇲 | flag-om | 🇵🇦 | flag-pa |
+| 🇵🇪 | flag-pe | 🇵🇫 | flag-pf |
+| 🇵🇬 | flag-pg | 🇵🇭 | flag-ph |
+| 🇵🇰 | flag-pk | 🇵🇱 | flag-pl |
+| 🇵🇲 | flag-pm | 🇵🇳 | flag-pn |
+| 🇵🇷 | flag-pr | 🇵🇸 | flag-ps |
+| 🇵🇹 | flag-pt | 🇵🇼 | flag-pw |
+| 🇵🇾 | flag-py | 🇶🇦 | flag-qa |
+| 🇷🇪 | flag-re | 🇷🇴 | flag-ro |
+| 🇷🇸 | flag-rs | 🇷🇺 | flag-ru, ru |
+| 🇷🇼 | flag-rw | 🇸🇦 | flag-sa |
+| 🇸🇧 | flag-sb | 🇸🇨 | flag-sc |
+| 🇸🇩 | flag-sd | 🇸🇪 | flag-se |
+| 🇸🇬 | flag-sg | 🇸🇭 | flag-sh |
+| 🇸🇮 | flag-si | 🇸🇯 | flag-sj |
+| 🇸🇰 | flag-sk | 🇸🇱 | flag-sl |
+| 🇸🇲 | flag-sm | 🇸🇳 | flag-sn |
+| 🇸🇴 | flag-so | 🇸🇷 | flag-sr |
+| 🇸🇸 | flag-ss | 🇸🇹 | flag-st |
+| 🇸🇻 | flag-sv | 🇸🇽 | flag-sx |
+| 🇸🇾 | flag-sy | 🇸🇿 | flag-sz |
+| 🇹🇦 | flag-ta | 🇹🇨 | flag-tc |
+| 🇹🇩 | flag-td | 🇹🇫 | flag-tf |
+| 🇹🇬 | flag-tg | 🇹🇭 | flag-th |
+| 🇹🇯 | flag-tj | 🇹🇰 | flag-tk |
+| 🇹🇱 | flag-tl | 🇹🇲 | flag-tm |
+| 🇹🇳 | flag-tn | 🇹🇴 | flag-to |
+| 🇹🇷 | flag-tr | 🇹🇹 | flag-tt |
+| 🇹🇻 | flag-tv | 🇹🇼 | flag-tw |
+| 🇹🇿 | flag-tz | 🇺🇦 | flag-ua |
+| 🇺🇬 | flag-ug | 🇺🇲 | flag-um |
+| 🇺🇸 | flag-us, us | 🇺🇾 | flag-uy |
+| 🇺🇿 | flag-uz | 🇻🇦 | flag-va |
+| 🇻🇨 | flag-vc | 🇻🇪 | flag-ve |
+| 🇻🇬 | flag-vg | 🇻🇮 | flag-vi |
+| 🇻🇳 | flag-vn | 🇻🇺 | flag-vu |
+| 🇼🇫 | flag-wf | 🇼🇸 | flag-ws |
+| 🇽🇰 | flag-xk | 🇾🇪 | flag-ye |
+| 🇾🇹 | flag-yt | 🇿🇦 | flag-za |
+| 🇿🇲 | flag-zm | 🇿🇼 | flag-zw |
+| 👨‍👨‍👦 | man-man-boy | 👨‍👨‍👦‍👦 | man-man-boy-boy |
+| 👨‍👨‍👧 | man-man-girl | 👨‍👨‍👧‍👦 | man-man-girl-boy |
+| 👨‍👨‍👧‍👧 | man-man-girl-girl | 👨‍👩‍👦‍👦 | man-woman-boy-boy |
+| 👨‍👩‍👧 | man-woman-girl | 👨‍👩‍👧‍👦 | man-woman-girl-boy |
+| 👨‍👩‍👧‍👧 | man-woman-girl-girl | 👨‍❤️‍👨 | man-heart-man |
+| 👨‍❤️‍💋‍👨 | man-kiss-man | 👩‍👩‍👦 | woman-woman-boy |
+| 👩‍👩‍👦‍👦 | woman-woman-boy-boy | 👩‍👩‍👧 | woman-woman-girl |
+| 👩‍👩‍👧‍👦 | woman-woman-girl-boy | 👩‍👩‍👧‍👧 | woman-woman-girl-girl |
+| 👩‍❤️‍👩 | woman-heart-woman | 👩‍❤️‍💋‍👩 | woman-kiss-woman |
+

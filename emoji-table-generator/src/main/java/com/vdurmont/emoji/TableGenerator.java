@@ -1,5 +1,8 @@
 package com.vdurmont.emoji;
 
+import com.maximebertheau.emoji.Emoji;
+import com.maximebertheau.emoji.EmojiManager;
+
 import java.io.FileWriter;
 import java.io.IOException;
 
