@@ -4,7 +4,7 @@
 
     <groupId>com.maximebertheau</groupId>
     <artifactId>emoji-data-java</artifactId>
-    <version>1.0.0</version>
+    <version>1.0</version>
     <packaging>jar</packaging>
 
     <name>emoji-java</name>
@@ -150,4 +150,12 @@
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
     </distributionManagement>-->
+
+    <distributionManagement>
+        <repository>
+            <id>bintray-maxoumime-emoji-data-java</id>
+            <name>maxoumime-emoji-data-java</name>
+            <url>https://api.bintray.com/maven/maxoumime/emoji-data-java/emoji-data-java/;publish=1</url>
+        </repository>
+    </distributionManagement>
 </project>
