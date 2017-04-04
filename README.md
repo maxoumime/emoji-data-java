@@ -3,13 +3,11 @@
 [![Build Status](https://travis-ci.org/maxoumime/emoji-data-java.svg?branch=master)](https://travis-ci.org/maxoumime/emoji-data-java)
 [![License Info](http://img.shields.io/badge/license-The%20MIT%20License-brightgreen.svg)](https://github.com/maxoumime/emoji-data-java/blob/master/LICENSE.md)
 
-*The missing emoji library for java. Based on emoji-data*
+*The missing emoji library for Java. Based on emoji-data*
 
-**emoji-java** is a lightweight java library that helps you use Emojis in your java applications.
+**emoji-data-java** is a lightweight Java library that helps you use Emojis in your Java applications.
 
 ## How to get it?
-
-**The library is not uploaded to JCenter yet, but you can get it by using [JitPack](https://jitpack.io/#maxoumime/emoji-data-java/v1.0).**
 
 ##### Via Maven:
 ```xml
@@ -27,7 +25,6 @@ compile 'com.maximebertheau:emoji-data-java:1.0'
 
 
 ## How to use it?
-
 
 
 ### EmojiManager
