@@ -97,7 +97,7 @@ public class EmojiParserTest {
 
         //With greedy parsing, this will give :man::woman::boy:
         //THEN
-        assertEquals(":family:", result);
+        assertEquals(":man-woman-boy:", result);
     }
 
     @Test
@@ -439,8 +439,8 @@ public class EmojiParserTest {
                 "\uD83D\uDC4D\uD83C\uDFFF with\uD83D\uDCAA\uD83C\uDFFD a few emojis!";
 
         List<Emoji> emojis = new ArrayList<Emoji>();
-        emojis.add(EmojiManager.getForAlias("smile"));
-        emojis.add(EmojiManager.getForAlias("+1"));
+        emojis.addAll(EmojiManager.getForAlias("smile"));
+        emojis.addAll(EmojiManager.getForAlias("+1"));
 
         // WHEN
         String result = EmojiParser.removeEmojis(input, emojis);
@@ -458,8 +458,8 @@ public class EmojiParserTest {
                 "\uD83D\uDC4D\uD83C\uDFFF with\uD83D\uDCAA\uD83C\uDFFD a few emojis!";
 
         List<Emoji> emojis = new ArrayList<Emoji>();
-        emojis.add(EmojiManager.getForAlias("smile"));
-        emojis.add(EmojiManager.getForAlias("+1"));
+        emojis.addAll(EmojiManager.getForAlias("smile"));
+        emojis.addAll(EmojiManager.getForAlias("+1"));
 
         // WHEN
         String result = EmojiParser.removeAllEmojisExcept(input, emojis);
@@ -505,5 +505,47 @@ public class EmojiParserTest {
 
         // THEN
         assertEquals(":woman-kiss-woman:", result);
+    }
+
+    @Test
+    public void parseToAliases_emojiv4() {
+        // GIVEN
+        String str = "🤤";
+
+        // WHEN
+        String result = EmojiParser.parseToAliases(str);
+
+        // THEN
+        assertEquals(":drooling_face:", result);
+    }
+
+    @Test
+    public void parseToAliases_emojiv4_obsoleted() {
+        // GIVEN
+        String str = "\u26F9";
+
+        // WHEN
+        String result = EmojiParser.parseToAliases(str);
+
+        // THEN
+        assertEquals(":person_with_ball:", result);
+
+        // GIVEN
+        str = "\u26F9\uFE0F";
+
+        // WHEN
+        result = EmojiParser.parseToAliases(str);
+
+        // THEN
+        assertEquals(":person_with_ball:", result);
+
+        // GIVEN
+        str = "\u26F9\uFE0F\u200D\u2642\uFE0F";
+
+        // WHEN
+        result = EmojiParser.parseToAliases(str);
+
+        // THEN
+        assertEquals(":man-bouncing-ball:", result);
     }
 }

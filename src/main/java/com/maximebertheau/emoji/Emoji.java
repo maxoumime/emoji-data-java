@@ -17,6 +17,7 @@ public class Emoji {
     private final String unicode;
     private final String htmlDec;
     private final String htmlHex;
+    private final boolean isObsoleted;
 
     /**
      * Constructor for the Emoji.
@@ -28,10 +29,12 @@ public class Emoji {
     protected Emoji(
             boolean supportsFitzpatrick,
             List<String> aliases,
+            boolean isObsoleted,
             byte... bytes
     ) {
         this.supportsFitzpatrick = supportsFitzpatrick;
         this.aliases = Collections.unmodifiableList(aliases);
+        this.isObsoleted = isObsoleted;
 
         int count = 0;
         try {
@@ -143,6 +146,11 @@ public class Emoji {
      */
     public String getHtmlHexadecimal() {
         return this.htmlHex;
+    }
+
+
+    public boolean isObsoleted() {
+        return isObsoleted;
     }
 
     @Override

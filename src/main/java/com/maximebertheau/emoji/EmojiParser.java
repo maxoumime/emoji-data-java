@@ -102,7 +102,13 @@ public class EmojiParser {
         // Replace the aliases by their unicode
         String result = input;
         for (AliasCandidate candidate : candidates) {
-            Emoji emoji = EmojiManager.getForAlias(candidate.alias);
+            List<Emoji> emojiList = EmojiManager.getForAlias(candidate.alias);
+
+            Emoji emoji = null;
+            if (emojiList != null) {
+                emoji = emojiList.get(0);
+            }
+
             if (emoji != null) {
                 if (
                         emoji.supportsFitzpatrick() ||

@@ -2,10 +2,7 @@ package com.maximebertheau.emoji;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Holds the loaded emojis and provides search functions.
@@ -14,8 +11,8 @@ import java.util.Map;
  */
 public class EmojiManager {
     private static final String PATH = "/emojis.json";
-    private static final Map<String, Emoji> EMOJIS_BY_ALIAS =
-            new HashMap<String, Emoji>();
+    private static final Map<String, List<Emoji>> EMOJIS_BY_ALIAS =
+            new HashMap<String, List<Emoji>>();
     private static final List<Emoji> ALL_EMOJIS;
     private static final EmojiTrie EMOJI_TRIE;
 
@@ -24,9 +21,41 @@ public class EmojiManager {
             InputStream stream = EmojiLoader.class.getResourceAsStream(PATH);
             List<Emoji> emojis = EmojiLoader.loadEmojis(stream);
             ALL_EMOJIS = emojis;
+
+            // Obsoleted emojis last
+            Collections.sort(emojis, new Comparator<Emoji>() {
+                public int compare(Emoji o1, Emoji o2) {
+                    boolean b1 = o1.isObsoleted();
+                    boolean b2 = o2.isObsoleted();
+                    if( b1 && ! b2 ) {
+                        return +1;
+                    }
+                    if( ! b1 && b2 ) {
+                        return -1;
+                    }
+                    return 0;
+                }
+            });
+
+            Comparator<Emoji> shorterUnicodeFirst = new Comparator<Emoji>() {
+                public int compare(Emoji o1, Emoji o2) {
+                    return o2.getUnicode().compareTo(o1.getUnicode());
+                }
+            };
+
             for (Emoji emoji : emojis) {
                 for (String alias : emoji.getAliases()) {
-                    EMOJIS_BY_ALIAS.put(alias, emoji);
+
+                    List<Emoji> emojiList = EMOJIS_BY_ALIAS.get(alias);
+
+                    if (emojiList == null) emojiList = new LinkedList<Emoji>();
+
+                    emojiList.add(emoji);
+
+                    // Make shorter unicode first
+                    Collections.sort(emojiList, shorterUnicodeFirst);
+
+                    EMOJIS_BY_ALIAS.put(alias, emojiList);
                 }
             }
 
@@ -50,7 +79,7 @@ public class EmojiManager {
      * @return the associated {@link Emoji}, null if the alias
      * is unknown
      */
-    public static Emoji getForAlias(String alias) {
+    public static List<Emoji> getForAlias(String alias) {
         if (alias == null) {
             return null;
         }

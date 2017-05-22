@@ -7,6 +7,7 @@ import org.junit.runners.JUnit4;
 import java.io.IOException;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import static org.junit.Assert.*;
@@ -18,10 +19,10 @@ public class EmojiManagerTest {
         // GIVEN
 
         // WHEN
-        Emoji emoji = EmojiManager.getForAlias("jkahsgdfjksghfjkshf");
+        List<Emoji> emojis = EmojiManager.getForAlias("jkahsgdfjksghfjkshf");
 
         // THEN
-        assertNull(emoji);
+        assertNull(emojis);
     }
 
     @Test
@@ -29,10 +30,10 @@ public class EmojiManagerTest {
         // GIVEN
 
         // WHEN
-        Emoji emoji = EmojiManager.getForAlias("smile");
+        List<Emoji> emojis = EmojiManager.getForAlias("smile");
 
         // THEN
-        assertNotNull(emoji);
+        assertNotNull(emojis);
     }
 
     @Test
@@ -41,10 +42,10 @@ public class EmojiManagerTest {
         // GIVEN
 
         // WHEN
-        Emoji emoji = EmojiManager.getForAlias(":smile:");
+        List<Emoji> emojis = EmojiManager.getForAlias(":smile:");
 
         // THEN
-        assertNotNull(emoji);
+        assertNotNull(emojis);
     }
 
     @Test
