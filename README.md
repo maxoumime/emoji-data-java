@@ -14,13 +14,13 @@
 <dependency>
   <groupId>com.maximebertheau</groupId>
   <artifactId>emoji-data-java</artifactId>
-  <version>1.0</version>
+  <version>1.1</version>
 </dependency>
 ```
 
 ##### Via Gradle:
 ```gradle
-compile 'com.maximebertheau:emoji-data-java:1.0'
+compile 'com.maximebertheau:emoji-data-java:1.1'
 ```
 
 
@@ -34,6 +34,7 @@ The `EmojiManager` provides several static methods to search through the emojis 
 * `getForAlias` returns the emoji for an alias
 * `getAll` returns all the emojis
 * `isEmoji` checks if a string is an emoji
+* `getByCategory` get emojis depending on their `Category` (enum)
 
 ### Emoji model
 
