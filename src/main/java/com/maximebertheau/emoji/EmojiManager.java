@@ -15,7 +15,7 @@ public class EmojiManager {
             new HashMap<String, List<Emoji>>();
     private static final List<Emoji> ALL_EMOJIS;
     private static final EmojiTrie EMOJI_TRIE;
-
+    private static final Map<Category, List<Emoji>> EMOJIS_BY_CATEGORY = new HashMap<Category, List<Emoji>>();
     static {
         try {
             InputStream stream = EmojiLoader.class.getResourceAsStream(PATH);
@@ -43,23 +43,45 @@ public class EmojiManager {
                 }
             };
 
+            Comparator<Emoji> sortOrderComparator = new Comparator<Emoji>() {
+                public int compare(Emoji o1, Emoji o2) {
+                    return o1.getSortOrder() - o2.getSortOrder();
+                }
+            };
+
+            Set<String> namesInsertedInCategories = new HashSet<String>();
             for (Emoji emoji : emojis) {
+
+                // Add to category dictionary
+                Category category = emoji.getCategory();
+                if (category != null && !namesInsertedInCategories.contains(emoji.getName())) {
+
+                    List<Emoji> emojiListForCategory = EMOJIS_BY_CATEGORY.get(category);
+                    if (emojiListForCategory == null) emojiListForCategory = new LinkedList<Emoji>();
+
+                    emojiListForCategory.add(emoji);
+                    Collections.sort(emojiListForCategory, sortOrderComparator);
+
+                    if (emoji.getName() != null) // Add all the null names
+                        namesInsertedInCategories.add(emoji.getName());
+
+                    EMOJIS_BY_CATEGORY.put(category, emojiListForCategory);
+                }
+
                 for (String alias : emoji.getAliases()) {
 
+                    // Add to alias dictionary
                     List<Emoji> emojiList = EMOJIS_BY_ALIAS.get(alias);
-
                     if (emojiList == null) emojiList = new LinkedList<Emoji>();
-
                     emojiList.add(emoji);
-
                     // Make shorter unicode first
                     Collections.sort(emojiList, shorterUnicodeFirst);
-
                     EMOJIS_BY_ALIAS.put(alias, emojiList);
                 }
             }
 
             EMOJI_TRIE = new EmojiTrie(emojis);
+
             stream.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -140,6 +162,10 @@ public class EmojiManager {
      */
     public static boolean isOnlyEmojis(String string) {
         return string != null && EmojiParser.removeAllEmojis(string).isEmpty();
+    }
+
+    public static List<Emoji> getByCategory(Category category) {
+        return EMOJIS_BY_CATEGORY.get(category);
     }
 
     /**

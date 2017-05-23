@@ -84,7 +84,9 @@ public class EmojiLoader {
         boolean supportsFitzpatrick = json.has("skin_variations");
         List<String> aliases = jsonArrayToStringList(json.getJSONArray("short_names"));
 
-        return new Emoji(supportsFitzpatrick, aliases, json.has("obsoleted_by"), bytes);
+        Category category = Category.parse(json.optString("category"));
+
+        return new Emoji(json.optString("name"), supportsFitzpatrick, aliases, json.has("obsoleted_by"), category, json.optInt("sort_order"), bytes);
     }
 
     private static List<String> jsonArrayToStringList(JSONArray array) {

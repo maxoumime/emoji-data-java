@@ -12,12 +12,15 @@ import java.util.List;
  * @author Vincent DURMONT [vdurmont@gmail.com]
  */
 public class Emoji {
+    private final String name;
     private final boolean supportsFitzpatrick;
     private final List<String> aliases;
     private final String unicode;
     private final String htmlDec;
     private final String htmlHex;
     private final boolean isObsoleted;
+    private final Category category;
+    private final int sortOrder;
 
     /**
      * Constructor for the Emoji.
@@ -27,14 +30,20 @@ public class Emoji {
      * @param bytes               the emoji variations as byte array
      */
     protected Emoji(
+            String name,
             boolean supportsFitzpatrick,
             List<String> aliases,
             boolean isObsoleted,
+            Category category,
+            int sortOrder,
             byte... bytes
     ) {
+        this.name = name;
         this.supportsFitzpatrick = supportsFitzpatrick;
         this.aliases = Collections.unmodifiableList(aliases);
         this.isObsoleted = isObsoleted;
+        this.category = category;
+        this.sortOrder = sortOrder;
 
         int count = 0;
         try {
@@ -69,6 +78,10 @@ public class Emoji {
         for (int i = 0; i < count; i++)
             joined += array[i];
         return joined;
+    }
+
+    public String getName() {
+        return name;
     }
 
     /**
@@ -153,6 +166,14 @@ public class Emoji {
         return isObsoleted;
     }
 
+    public Category getCategory() {
+        return category;
+    }
+
+    public int getSortOrder() {
+        return sortOrder;
+    }
+
     @Override
     public boolean equals(Object other) {
         return !(other == null || !(other instanceof Emoji)) &&
@@ -188,6 +209,9 @@ public class Emoji {
                 ", unicode='" + unicode + '\'' +
                 ", htmlDec='" + htmlDec + '\'' +
                 ", htmlHex='" + htmlHex + '\'' +
+                ", isObsolete='" + isObsoleted + '\'' +
+                ", category='" + category.name() + '\'' +
+                ", sortOrder='" + sortOrder + '\'' +
                 '}';
     }
 }

@@ -138,4 +138,12 @@ public class EmojiManagerTest {
         }
         assertEquals(unicodes.size(), emojis.size());
     }
+
+    @Test
+    public void getAllCategories() {
+        for (Category category : Category.values()) {
+            List<Emoji> emojis = EmojiManager.getByCategory(category);
+            assertNotNull(emojis);
+        }
+    }
 }
