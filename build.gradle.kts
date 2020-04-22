@@ -19,10 +19,6 @@ dependencies {
     implementation(kotlin("test-junit"))
 }
 
-group = "com.maximebertheau"
-version = "2.0-dev-1"
-description = "emoji-java"
-
 java {
     sourceCompatibility = JavaVersion.VERSION_1_7
     withSourcesJar()
@@ -46,7 +42,7 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "com.maximebertheau"
             artifactId = "emoji-data-java"
-            version = "2.0-dev-1"
+            version = "2.0-dev-2"
 
             from(components["java"])
         }

@@ -7,6 +7,32 @@ import kotlin.test.assertEquals
 
 @RunWith(JUnit4::class)
 class EmojiParserTest {
+
+    @Test
+    fun `can parse all the emojis from their alias version`() {
+        // GIVEN
+        val str = EmojiManager.all.flatMap { it.aliases }.joinToString(separator = "") { ":$it:" }
+
+        // WHEN
+        val result = EmojiParser.parseToUnicode(str)
+
+        // THEN
+        assert(!result.contains(Regex("""[A-Za-z:]""")))
+    }
+
+    @Test
+    fun `can parse all the emojis from their unicode version`() {
+        // GIVEN
+        val str = EmojiManager.all.joinToString(separator = "") { it.unified.unicode }
+
+        // WHEN
+        val result = EmojiParser.parseToAliases(str)
+
+        // THEN
+        val aliasVersion = EmojiManager.all.map { it.aliases.first() }.joinToString(separator = "") { ":$it:" }
+        assertEquals(aliasVersion, result)
+    }
+
     @Test
     fun `parseToAliases replaces the emojis by one of their aliases`() {
         // GIVEN

@@ -51,8 +51,6 @@ object EmojiManager {
         return emojisByAlias[alias.trimAlias()]?.firstOrNull()
     }
 
-    private fun String.trimAlias() = trimStart(':').trimEnd(':')
-
     /**
      * Returns the [Emoji] for a given unicode.
      *
