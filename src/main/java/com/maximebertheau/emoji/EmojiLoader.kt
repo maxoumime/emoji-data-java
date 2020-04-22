@@ -2,7 +2,8 @@ package com.maximebertheau.emoji
 
 import org.json.JSONArray
 import org.json.JSONObject
-import java.io.*
+import java.io.IOException
+import java.io.UnsupportedEncodingException
 
 internal object EmojiLoader {
 

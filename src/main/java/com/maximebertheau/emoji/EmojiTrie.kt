@@ -21,19 +21,17 @@ internal class EmojiTrie(emojis: List<Emoji>) {
      *
      * @param sequence Sequence of char that may contain emoji in full or
      * partially.
-     * @return &lt;li&gt;
-     * Matches.EXACTLY if char sequence in its entirety is an emoji
-     * Matches.POSSIBLY if char sequence matches prefix of an emoji
-     * Matches.IMPOSSIBLE if char sequence matches no emoji or prefix of an emoji
+     * @return true if we have an exact match for this sequence
      */
-    fun isEmoji(sequence: CharArray?): Matches {
-        sequence ?: return Matches.POSSIBLY
+    fun isEmoji(sequence: CharArray?): Boolean {
+        sequence ?: return false
 
         var tree: Node = root
         for (c in sequence) {
-            tree = tree.getChild(c) ?: return Matches.IMPOSSIBLE
+            tree = tree.getChild(c) ?: return false
         }
-        return if (tree.emoji != null) Matches.EXACTLY else Matches.POSSIBLY
+
+        return tree.emoji != null
     }
 
     /**
@@ -48,17 +46,5 @@ internal class EmojiTrie(emojis: List<Emoji>) {
             tree = tree.getChild(c) ?: return null
         }
         return tree.emoji
-    }
-
-    enum class Matches {
-        EXACTLY, POSSIBLY, IMPOSSIBLE;
-
-        fun exactMatch(): Boolean {
-            return this == EXACTLY
-        }
-
-        fun impossibleMatch(): Boolean {
-            return this == IMPOSSIBLE
-        }
     }
 }

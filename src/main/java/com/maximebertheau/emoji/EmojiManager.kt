@@ -1,8 +1,6 @@
 package com.maximebertheau.emoji
 
 import com.maximebertheau.emoji.EmojiLoader.loadEmojis
-import com.maximebertheau.emoji.EmojiTrie.Matches
-import java.util.*
 
 object EmojiManager {
     val all: List<Emoji>
@@ -76,7 +74,7 @@ object EmojiManager {
      */
     @JvmStatic
     fun isEmoji(string: String?): Boolean {
-        return string != null && emojiTree.isEmoji(string.toCharArray()).exactMatch()
+        return string != null && emojiTree.isEmoji(string.toCharArray())
     }
 
     @JvmStatic
@@ -87,17 +85,8 @@ object EmojiManager {
      *
      * @param sequence Sequence of char that may contain emoji in full or
      * partially.
-     * @return &lt;li&gt;
-     * Matches.EXACTLY if char sequence in its entirety is an emoji
-     * &lt;/li&gt;
-     * &lt;li&gt;
-     * Matches.POSSIBLY if char sequence matches prefix of an emoji
-     * &lt;/li&gt;
-     * &lt;li&gt;
-     * Matches.IMPOSSIBLE if char sequence matches no emoji or prefix of an
-     * emoji
-     * &lt;/li&gt;
+     * @return if char sequence in an exact match for an emoji
      */
     @JvmStatic
-    fun isEmoji(sequence: CharArray?) = emojiTree.isEmoji(sequence) != Matches.IMPOSSIBLE
+    fun isEmoji(sequence: CharArray?) = emojiTree.isEmoji(sequence)
 }
