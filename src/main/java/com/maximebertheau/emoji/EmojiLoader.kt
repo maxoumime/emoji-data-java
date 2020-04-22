@@ -4,7 +4,7 @@ import org.json.JSONArray
 import org.json.JSONObject
 import java.io.*
 
-object EmojiLoader {
+internal object EmojiLoader {
     /**
      * Loads a JSONArray of emojis from an InputStream, parses it and returns the
      * associated list of [Emoji]s

@@ -4,6 +4,11 @@ object EmojiParser {
     private val aliasMatchingRegex = Regex(""":([\w_+-]+)(?:(?:\||::)((type_|skin-tone-\d+)[\w_]*))*:""")
     private val aliasMatchingRegexOptionalColon = Regex(""":?([\w_+-]+)(?:(?:\||::)((type_|skin-tone-\d+)[\w_]*))*:?""")
 
+    /**
+     * Converts the emojis in a String to their aliased version.
+     * @param input the String potentially containing emoji in their unicode version
+     * @return the aliased version of the input
+     */
     @JvmStatic
     fun parseToAliases(input: String): String {
         val root = EmojiManager.EMOJI_TREE.root
@@ -50,6 +55,11 @@ object EmojiParser {
         }
     }
 
+    /**
+     * Returns the unicode version of the aliased emojis in a String
+     * @param input the String potentially containing aliased emojis
+     * @return the transformed String
+     */
     @JvmStatic
     fun parseToUnicode(input: String): String {
         return input.getUnicodesForAliases().entries.fold(input) { acc, (alias, emoji) ->

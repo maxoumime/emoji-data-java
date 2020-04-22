@@ -1,7 +1,7 @@
 package com.maximebertheau.emoji
 
 class EmojiTrie(emojis: List<Emoji>) {
-    val root = Node()
+    internal val root = Node()
 
     init {
         for (emoji in emojis) {
@@ -62,7 +62,7 @@ class EmojiTrie(emojis: List<Emoji>) {
         }
     }
 
-    inner class Node {
+    internal inner class Node {
         private val children = mutableMapOf<Char, Node>()
 
         var emoji: Emoji? = null

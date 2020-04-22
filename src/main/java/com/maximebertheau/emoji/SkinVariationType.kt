@@ -31,17 +31,18 @@ enum class SkinVariationType(val unified: String) {
 
     companion object {
         @JvmStatic
-        fun fromUnified(unified: String) = values().firstOrNull { it.unified == unified } ?: throw Error("$unified doesn't exist!")
-        fun fromAlias(alias: String): SkinVariationType? {
-            return when (alias) {
-                "skin-tone-1", "type_1" -> TYPE_1_2
-                "skin-tone-2", "type_2" -> TYPE_1_2
-                "skin-tone-3", "type_3" -> TYPE_3
-                "skin-tone-4", "type_4" -> TYPE_4
-                "skin-tone-5", "type_5" -> TYPE_5
-                "skin-tone-6", "type_6" -> TYPE_6
-                else -> null
-            }
+        fun fromUnified(unified: String) = values().firstOrNull { it.unified == unified }
+                ?: throw Error("$unified doesn't exist!")
+
+        @JvmStatic
+        fun fromAlias(alias: String): SkinVariationType? = when (alias) {
+            "skin-tone-1" -> TYPE_1_2
+            "skin-tone-2" -> TYPE_1_2
+            "skin-tone-3" -> TYPE_3
+            "skin-tone-4" -> TYPE_4
+            "skin-tone-5" -> TYPE_5
+            "skin-tone-6" -> TYPE_6
+            else -> null
         }
     }
 }

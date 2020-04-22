@@ -9,7 +9,7 @@ object EmojiManager {
     private const val PATH = "/emojis.json"
     private val EMOJIS_BY_ALIAS = mutableMapOf<String, MutableList<Emoji>>()
     private var ALL_EMOJIS: List<Emoji>
-    val EMOJI_TREE: EmojiTrie
+    internal val EMOJI_TREE: EmojiTrie
     private val EMOJIS_BY_CATEGORY = mutableMapOf<Category, MutableList<Emoji>>()
 
     init {
@@ -58,10 +58,10 @@ object EmojiManager {
     @JvmStatic
     fun getForAlias(alias: String?): List<Emoji> {
         alias ?: return emptyList()
-        return EMOJIS_BY_ALIAS[trimAlias(alias)].orEmpty()
+        return EMOJIS_BY_ALIAS[alias.trimAlias()].orEmpty()
     }
 
-    private fun trimAlias(alias: String) = alias.trimStart(':').trimEnd(':')
+    private fun String.trimAlias() = trimStart(':').trimEnd(':')
 
     /**
      * Returns the [Emoji] for a given unicode.
