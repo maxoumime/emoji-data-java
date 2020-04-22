@@ -103,7 +103,7 @@ object EmojiParser {
                 .map { it.trimStart(':').trimEnd(':') }
                 .filter { it.isNotEmpty() }
 
-        val emoji = EmojiManager.getForAlias(alias).firstOrNull() ?: return null
+        val emoji = EmojiManager.getForAlias(alias) ?: return null
 
         val skinVariations = skinVariationsString.mapNotNull {
             SkinVariationType.fromAlias(it)

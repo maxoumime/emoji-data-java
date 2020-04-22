@@ -36,7 +36,6 @@ enum class SkinVariationType(val unified: String) {
 
         @JvmStatic
         fun fromAlias(alias: String): SkinVariationType? = when (alias) {
-            "skin-tone-1" -> TYPE_1_2
             "skin-tone-2" -> TYPE_1_2
             "skin-tone-3" -> TYPE_3
             "skin-tone-4" -> TYPE_4

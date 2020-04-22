@@ -20,7 +20,7 @@ dependencies {
 }
 
 group = "com.maximebertheau"
-version = "1.1"
+version = "2.0"
 description = "emoji-java"
 
 java {
@@ -42,7 +42,6 @@ tasks.withType<JavaCompile> {
 val compileKotlin: KotlinCompile by tasks
 compileKotlin.kotlinOptions {
     jvmTarget = "1.8"
-    freeCompilerArgs = listOf("-Xinline-classes")
 }
 val compileTestKotlin: KotlinCompile by tasks
 compileTestKotlin.kotlinOptions {

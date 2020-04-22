@@ -13,11 +13,11 @@ class EmojiManagerTest {
         // GIVEN
 
         // WHEN
-        val emojis = EmojiManager.getForAlias("jkahsgdfjksghfjkshf")
+        val emoji = EmojiManager.getForAlias("jkahsgdfjksghfjkshf")
 
         // THEN
 
-        assert(emojis.isEmpty())
+        assertNull(emoji)
     }
 
     @Test
@@ -25,10 +25,10 @@ class EmojiManagerTest {
         // GIVEN
 
         // WHEN
-        val emojis = EmojiManager.getForAlias("smile")
+        val emoji = EmojiManager.getForAlias("smile")
 
         // THEN
-        assert(emojis.isNotEmpty())
+        assertNotNull(emoji)
     }
 
     @Test
@@ -36,10 +36,10 @@ class EmojiManagerTest {
         // GIVEN
 
         // WHEN
-        val emojis = EmojiManager.getForAlias(":smile:")
+        val emoji = EmojiManager.getForAlias(":smile:")
 
         // THEN
-        assert(emojis.isNotEmpty())
+        assertNotNull(emoji)
     }
 
     @Test
@@ -103,5 +103,16 @@ class EmojiManagerTest {
             val emojis = EmojiManager.getByCategory(category)
             assert(emojis.isNotEmpty())
         }
+    }
+
+    @Test
+    fun `getAllCategories contains all the emojis`() {
+        val emojisInCategoriesCount = Category.values().flatMap { category ->
+            EmojiManager.getByCategory(category)
+        }.count()
+
+        val allEmojisCount = EmojiManager.all.count()
+
+        assertEquals(allEmojisCount, emojisInCategoriesCount)
     }
 }

@@ -40,9 +40,9 @@ internal object EmojiLoader {
     @JvmStatic
     @Throws(UnsupportedEncodingException::class)
     internal fun JSONObject.toEmoji(): Emoji? {
-        val unified = optString("unified")?.let(::UnifiedString) ?: return null
+        val unified = optString("unified") ?: return null
         val aliases = optJSONArray("short_names")?.strings() ?: return null
-        val category = optString("category")?.let(Category.Companion::parse)
+        val category = optString("category")?.let(Category.Companion::parse) ?: return null
         val name = optString("name")
         val isObsolete = has("obsoleted_by")
         val sortOrder = optInt("sort_order")
@@ -50,7 +50,7 @@ internal object EmojiLoader {
         val skinVariations = optJSONArray("skin_variations")?.arrays()
                 ?.map {
                     val types = it.getString(0).split('-').map(SkinVariationType.Companion::fromUnified)
-                    val variation = it.getString(1).let(::UnifiedString)
+                    val variation = it.getString(1)
 
                     SkinVariation(types, variation)
                 }

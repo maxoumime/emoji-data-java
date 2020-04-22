@@ -12,10 +12,11 @@ enum class Category(val dataName: String) {
     FOODS("Food & Drink"),
     PLACES("Travel & Places"),
     ACTIVITY("Activities"),
-    FLAGS("Flags");
+    FLAGS("Flags"),
+    SKIN_TONES("Skin Tones");
 
     companion object {
         @JvmStatic
-        fun parse(name: String) = values().firstOrNull { it.dataName == name }
+        fun parse(name: String) = values().firstOrNull { it.dataName == name } ?: throw Error("Unknown category $name")
     }
 }

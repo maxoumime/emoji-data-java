@@ -2,10 +2,10 @@ package com.maximebertheau.emoji
 
 data class Emoji(
         val name: String?,
-        val unified: UnifiedString,
+        val unified: String,
         val aliases: List<String>,
-        val isObsoleted: Boolean,
-        val category: Category?,
+        internal val isObsoleted: Boolean,
+        val category: Category,
         val sortOrder: Int,
         val skinVariations: List<SkinVariation>
 ) {

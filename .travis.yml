@@ -1,7 +1,10 @@
-sudo: false
 language: java
-jdk:
-  - openjdk6
-  - oraclejdk7
-  - openjdk7
-  - oraclejdk8
+install: true
+
+os: linux
+dist: trusty
+jdk: oraclejdk8
+
+script:
+  - ./gradlew build --scan -s
+  - ./gradlew test

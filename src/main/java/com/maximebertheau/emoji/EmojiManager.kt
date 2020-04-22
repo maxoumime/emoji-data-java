@@ -34,7 +34,7 @@ object EmojiManager {
         val namesInsertedInCategories = mutableSetOf<String>()
         for (emoji in emojis) {
             // Category map
-            if (emoji.category != null && emoji.name != null && !namesInsertedInCategories.add(emoji.name)) {
+            if (namesInsertedInCategories.add(emoji.unified)) {
                 val emojiListForCategory = (EMOJIS_BY_CATEGORY[emoji.category] ?: mutableListOf()) + emoji
                 EMOJIS_BY_CATEGORY[emoji.category] = emojiListForCategory.sortedBy { it.sortOrder }.toMutableList()
             }
@@ -56,9 +56,9 @@ object EmojiManager {
      * is unknown
      */
     @JvmStatic
-    fun getForAlias(alias: String?): List<Emoji> {
-        alias ?: return emptyList()
-        return EMOJIS_BY_ALIAS[alias.trimAlias()].orEmpty()
+    fun getForAlias(alias: String?): Emoji? {
+        alias ?: return null
+        return EMOJIS_BY_ALIAS[alias.trimAlias()]?.firstOrNull()
     }
 
     private fun String.trimAlias() = trimStart(':').trimEnd(':')
