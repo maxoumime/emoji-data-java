@@ -90,6 +90,7 @@ object EmojiManager {
      * @param string the string to test
      * @return true if the string is an emoji's unicode, false else
      */
+    @JvmStatic
     fun isEmoji(string: String?): Boolean {
         return string != null && EMOJI_TREE.isEmoji(string.toCharArray()).exactMatch()
     }
