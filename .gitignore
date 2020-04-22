@@ -1,7 +1,9 @@
 # Java
 target
+build
 
 # IntelliJ files
 *.iml
 .idea
 settings.xml
+
