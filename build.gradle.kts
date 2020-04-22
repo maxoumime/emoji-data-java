@@ -20,19 +20,12 @@ dependencies {
 }
 
 group = "com.maximebertheau"
-version = "2.0"
+version = "2.0-dev-1"
 description = "emoji-java"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_7
-}
-
-publishing {
-    publications {
-        create<MavenPublication>("maven") {
-            from(components.getByName("java"))
-        }
-    }
+    withSourcesJar()
 }
 
 tasks.withType<JavaCompile> {
@@ -46,4 +39,16 @@ compileKotlin.kotlinOptions {
 val compileTestKotlin: KotlinCompile by tasks
 compileTestKotlin.kotlinOptions {
     jvmTarget = "1.8"
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = "com.maximebertheau"
+            artifactId = "emoji-data-java"
+            version = "2.0-dev-1"
+
+            from(components["java"])
+        }
+    }
 }

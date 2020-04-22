@@ -11,12 +11,12 @@ object EmojiParser {
      */
     @JvmStatic
     fun parseToAliases(input: String): String {
-        val root = EmojiManager.EMOJI_TREE.root
+        val root = EmojiManager.emojiTree.root
 
-        var node: EmojiTrie.Node? = null
+        var node: Node? = null
         var path = mutableListOf<Char>()
 
-        fun findFirstNode(c: Char): EmojiTrie.Node {
+        fun findFirstNode(c: Char): Node {
             path = mutableListOf()
             return if (root.hasChild(c)) {
                 path.add(c)
@@ -83,9 +83,10 @@ object EmojiParser {
             uniqueMatches[fullAlias] = getUnicodeFromAlias(fullAlias) ?: return@forEach
         }
 
-        return uniqueMatches.toSortedMap(Comparator { o1, o2 ->
-            o1.length - o2.length // Execute the longer first so emojis with skin variations are executed before the ones without
-        })
+        return uniqueMatches.entries // Cannot sort a Map directly (toSortedMap doesn't work for odd counts)
+                .sortedByDescending { it.value.length } // Execute the longer first so emojis with skin variations are executed before the ones without
+                .map { it.key to it.value }
+                .toMap()
     }
 
     private fun getUnicodeFromAlias(input: String): String? {
@@ -95,7 +96,7 @@ object EmojiParser {
 
         val match = results.first()
 
-        val aliasMatch = match.groups.drop(1).firstOrNull() ?: return null
+        val aliasMatch = match.groups.firstOrNull() ?: return null
         val alias = input.substring(aliasMatch.range)
 
         val skinVariationsString = input.substring(aliasMatch.range.last)
@@ -109,8 +110,6 @@ object EmojiParser {
             SkinVariationType.fromAlias(it)
         }
 
-        return emoji.skinVariations.firstOrNull {
-            it.types == skinVariations
-        }?.unified?.unicode ?: emoji.unified.unicode
+        return emoji.unified.unicode + skinVariations.joinToString(separator = "") { ":${it.alias}:" }
     }
 }

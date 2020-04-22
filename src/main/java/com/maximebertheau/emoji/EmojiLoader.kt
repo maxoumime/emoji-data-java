@@ -5,6 +5,9 @@ import org.json.JSONObject
 import java.io.*
 
 internal object EmojiLoader {
+
+    private const val PATH = "/emojis.json"
+
     /**
      * Loads a JSONArray of emojis from an InputStream, parses it and returns the
      * associated list of [Emoji]s
@@ -15,10 +18,15 @@ internal object EmojiLoader {
      * the JSONArray
      */
     @Throws(IOException::class)
-    internal fun loadEmojis(stream: InputStream): Sequence<Emoji> {
+    internal fun loadEmojis(): Sequence<Emoji> {
+        val stream = EmojiLoader::class.java.getResourceAsStream(PATH)
 
-        val json = stream.use { it.bufferedReader(Charsets.UTF_8).readText() }
-        
+        val json = try {
+            stream.use { it.bufferedReader(Charsets.UTF_8).readText() }
+        } catch (e: IOException) {
+            throw RuntimeException(e)
+        }
+
         return JSONArray(json).objects().asSequence()
                 .filter { it.has("unified") }
                 .flatMap { emojiObject ->
@@ -31,18 +39,18 @@ internal object EmojiLoader {
                         emojiObject to variation
                     }
                 }
-                .mapNotNull { (emojiObject, variation) ->
+                .flatMap { (emojiObject, variation) ->
                     emojiObject.put("unified", variation)
-                    emojiObject.toEmoji()
+                    emojiObject.toEmojis()
                 }
     }
 
     @JvmStatic
     @Throws(UnsupportedEncodingException::class)
-    internal fun JSONObject.toEmoji(): Emoji? {
-        val unified = optString("unified") ?: return null
-        val aliases = optJSONArray("short_names")?.strings() ?: return null
-        val category = optString("category")?.let(Category.Companion::parse) ?: return null
+    internal fun JSONObject.toEmojis(): Sequence<Emoji> {
+        val unified = optString("unified") ?: return emptySequence()
+        val aliases = optJSONArray("short_names")?.strings() ?: return emptySequence()
+        val category = optString("category")?.let(Category.Companion::parse) ?: return emptySequence()
         val name = optString("name")
         val isObsolete = has("obsoleted_by")
         val sortOrder = optInt("sort_order")
@@ -56,7 +64,22 @@ internal object EmojiLoader {
                 }
                 .orEmpty()
 
-        return Emoji(name, unified, aliases, isObsolete, category, sortOrder, skinVariations)
+        val emojiBase = Emoji(name, unified, aliases, isObsolete, category, sortOrder, emptyList())
+
+        return sequence {
+            yield(emojiBase)
+
+            skinVariations.forEach { variation ->
+                val newAliases = emojiBase.aliases.map { alias ->
+                    if (variation.types.isEmpty()) {
+                        alias
+                    } else {
+                        alias + ":" + variation.types.joinToString(separator = "") { ":${it.alias}:" }.trimEnd(':')
+                    }
+                }
+                yield(emojiBase.copy(aliases = newAliases, unified = variation.unified))
+            }
+        }
     }
 
     private fun JSONArray.objects() = (0 until length()).map(::getJSONObject)

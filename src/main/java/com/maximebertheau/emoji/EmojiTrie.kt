@@ -1,18 +1,18 @@
 package com.maximebertheau.emoji
 
-class EmojiTrie(emojis: List<Emoji>) {
+internal class EmojiTrie(emojis: List<Emoji>) {
     internal val root = Node()
 
     init {
         for (emoji in emojis) {
-            var tree: Node = root
+            var node = root
             for (c in emoji.unified.unicode.toCharArray()) {
-                if (!tree.hasChild(c)) {
-                    tree.addChild(c)
+                if (!node.hasChild(c)) {
+                    node.addChild(c)
                 }
-                tree = tree.getChild(c)!!
+                node = node.getChild(c)!!
             }
-            tree.emoji = emoji
+            node.emoji = emoji
         }
     }
 
@@ -33,7 +33,7 @@ class EmojiTrie(emojis: List<Emoji>) {
         for (c in sequence) {
             tree = tree.getChild(c) ?: return Matches.IMPOSSIBLE
         }
-        return if (tree.isEndOfEmoji) Matches.EXACTLY else Matches.POSSIBLY
+        return if (tree.emoji != null) Matches.EXACTLY else Matches.POSSIBLY
     }
 
     /**
@@ -60,22 +60,5 @@ class EmojiTrie(emojis: List<Emoji>) {
         fun impossibleMatch(): Boolean {
             return this == IMPOSSIBLE
         }
-    }
-
-    internal inner class Node {
-        private val children = mutableMapOf<Char, Node>()
-
-        var emoji: Emoji? = null
-
-        val hasChildren get() = children.isNotEmpty()
-        fun hasChild(child: Char): Boolean = children.containsKey(child)
-
-        fun addChild(child: Char) {
-            children[child] = Node()
-        }
-
-        fun getChild(child: Char): Node? = children[child]
-
-        val isEndOfEmoji: Boolean get() = emoji != null
     }
 }

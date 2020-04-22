@@ -2,32 +2,24 @@ package com.maximebertheau.emoji
 
 import com.maximebertheau.emoji.EmojiLoader.loadEmojis
 import com.maximebertheau.emoji.EmojiTrie.Matches
-import java.io.IOException
 import java.util.*
 
 object EmojiManager {
-    private const val PATH = "/emojis.json"
-    private val EMOJIS_BY_ALIAS = mutableMapOf<String, MutableList<Emoji>>()
-    private var ALL_EMOJIS: List<Emoji>
-    internal val EMOJI_TREE: EmojiTrie
-    private val EMOJIS_BY_CATEGORY = mutableMapOf<Category, MutableList<Emoji>>()
+    val all: List<Emoji>
+    private val emojisByAlias = mutableMapOf<String, MutableList<Emoji>>()
+    private val emojisByCategory = mutableMapOf<Category, MutableList<Emoji>>()
+    internal val emojiTree: EmojiTrie
 
     init {
-        val emojis = try {
-            EmojiManager::class.java.getResourceAsStream(PATH)
-                    .use { loadEmojis(it) }
-                    .sortedWith(Comparator { a, b ->
-                        when {
-                            a.isObsoleted && !b.isObsoleted -> 1
-                            !a.isObsoleted && b.isObsoleted -> -1
-                            else -> 0
-                        }
-                    }).toList()
-        } catch (e: IOException) {
-            throw RuntimeException(e)
-        }
+        val emojis = loadEmojis().sortedWith(Comparator { a, b ->
+            when {
+                a.isObsolete && !b.isObsolete -> 1
+                !a.isObsolete && b.isObsolete -> -1
+                else -> 0
+            }
+        }).toList()
 
-        ALL_EMOJIS = emojis
+        this.all = emojis
 
         val shorterUnicodeFirst = Comparator<Emoji> { a, b -> b.unified.unicode.compareTo(a.unified.unicode) }
 
@@ -35,17 +27,17 @@ object EmojiManager {
         for (emoji in emojis) {
             // Category map
             if (namesInsertedInCategories.add(emoji.unified)) {
-                val emojiListForCategory = (EMOJIS_BY_CATEGORY[emoji.category] ?: mutableListOf()) + emoji
-                EMOJIS_BY_CATEGORY[emoji.category] = emojiListForCategory.sortedBy { it.sortOrder }.toMutableList()
+                val emojiListForCategory = (emojisByCategory[emoji.category] ?: mutableListOf()) + emoji
+                emojisByCategory[emoji.category] = emojiListForCategory.sortedBy { it.sortOrder }.toMutableList()
             }
 
             // Alias map
             for (alias in emoji.aliases) {
-                val emojiList = (EMOJIS_BY_ALIAS[alias] ?: mutableListOf()) + emoji
-                EMOJIS_BY_ALIAS[alias] = emojiList.sortedWith(shorterUnicodeFirst).toMutableList()
+                val emojiList = (emojisByAlias[alias] ?: mutableListOf()) + emoji
+                emojisByAlias[alias] = emojiList.sortedWith(shorterUnicodeFirst).toMutableList()
             }
         }
-        EMOJI_TREE = EmojiTrie(emojis)
+        emojiTree = EmojiTrie(emojis)
     }
 
     /**
@@ -58,7 +50,7 @@ object EmojiManager {
     @JvmStatic
     fun getForAlias(alias: String?): Emoji? {
         alias ?: return null
-        return EMOJIS_BY_ALIAS[alias.trimAlias()]?.firstOrNull()
+        return emojisByAlias[alias.trimAlias()]?.firstOrNull()
     }
 
     private fun String.trimAlias() = trimStart(':').trimEnd(':')
@@ -73,16 +65,8 @@ object EmojiManager {
     @JvmStatic
     fun getByUnicode(unicode: String?): Emoji? {
         unicode ?: return null
-        return EMOJI_TREE.getEmoji(unicode)
+        return emojiTree.getEmoji(unicode)
     }
-
-    /**
-     * Returns all the [Emoji]s
-     *
-     * @return all the [Emoji]s
-     */
-    @JvmStatic
-    val all: Collection<Emoji> get() = ALL_EMOJIS
 
     /**
      * Tests if a given String is an emoji.
@@ -92,11 +76,11 @@ object EmojiManager {
      */
     @JvmStatic
     fun isEmoji(string: String?): Boolean {
-        return string != null && EMOJI_TREE.isEmoji(string.toCharArray()).exactMatch()
+        return string != null && emojiTree.isEmoji(string.toCharArray()).exactMatch()
     }
 
     @JvmStatic
-    fun getByCategory(category: Category) = EMOJIS_BY_CATEGORY[category].orEmpty()
+    fun getByCategory(category: Category) = emojisByCategory[category].orEmpty()
 
     /**
      * Checks if sequence of chars contain an emoji.
@@ -115,5 +99,5 @@ object EmojiManager {
      * &lt;/li&gt;
      */
     @JvmStatic
-    fun isEmoji(sequence: CharArray?): Matches = EMOJI_TREE.isEmoji(sequence)
+    fun isEmoji(sequence: CharArray?) = emojiTree.isEmoji(sequence) != Matches.IMPOSSIBLE
 }

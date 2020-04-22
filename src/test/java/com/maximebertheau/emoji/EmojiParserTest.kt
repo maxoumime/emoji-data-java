@@ -117,17 +117,6 @@ class EmojiParserTest {
     }
 
     @Test
-    fun `parseToUnicode with an unsupported fitzpatrick modifier doesn't replace`() {
-        // GIVEN
-        val str = ":grinning::skin-tone-6:"
-        // WHEN
-        val result = EmojiParser.parseToUnicode(str)
-
-        // THEN
-        assertEquals("😀", result)
-    }
-
-    @Test
     fun `parseToUnicode with the keycap asterisk emoji replaces the alias by the emoji`() {
         // GIVEN
         val str = "Let's test the :family: emoji and " +
@@ -204,5 +193,63 @@ class EmojiParserTest {
 
         // THEN
         assertEquals(":man-bouncing-ball:", result)
+    }
+
+    @Test
+    fun `from unicode, can parse emojis with multiple skin colors`() {
+        // GIVEN
+        val str = "\uD83D\uDC68\uD83C\uDFFF\u200D\uD83E\uDD1D\u200D\uD83D\uDC68\uD83C\uDFFB"
+
+        // WHEN
+
+        val aliases = EmojiParser.parseToAliases(str)
+
+        // THEN
+
+        assertEquals(":two_men_holding_hands::skin-tone-6::skin-tone-2:", aliases)
+    }
+
+    @Test
+    fun `from aliases, can parse emojis with multiple skin colors`() {
+        // GIVEN
+        val str = ":two_men_holding_hands::skin-tone-6::skin-tone-2:"
+
+        // WHEN
+
+        val unicode = EmojiParser.parseToUnicode(str)
+
+        // THEN
+
+        assertEquals("\uD83D\uDC68\uD83C\uDFFF\u200D\uD83E\uDD1D\u200D\uD83D\uDC68\uD83C\uDFFB", unicode)
+    }
+
+    @Test
+    fun `from unicode, can parse emojis with multiple skin colors back and forth`() {
+        // GIVEN
+        val str = "\uD83D\uDC68\uD83C\uDFFF\u200D\uD83E\uDD1D\u200D\uD83D\uDC68\uD83C\uDFFB"
+
+        // WHEN
+
+        val aliases = EmojiParser.parseToAliases(str)
+        val reEmoji = EmojiParser.parseToUnicode(aliases)
+
+        // THEN
+
+        assertEquals(str, reEmoji)
+    }
+
+    @Test
+    fun `from aliases, can parse emojis with multiple skin colors back and forth`() {
+        // GIVEN
+        val str = ":two_men_holding_hands::skin-tone-6::skin-tone-2:"
+
+        // WHEN
+
+        val unicode = EmojiParser.parseToUnicode(str)
+        val aliases = EmojiParser.parseToAliases(unicode)
+
+        // THEN
+
+        assertEquals(str, aliases)
     }
 }
