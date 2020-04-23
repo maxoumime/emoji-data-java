@@ -115,4 +115,24 @@ class EmojiManagerTest {
 
         assertEquals(allEmojisCount, emojisInCategoriesCount)
     }
+
+    @Test
+    fun `getAllCategories only contains pristine emojis`() {
+        val emojisInCategories = Category.values().flatMap { category ->
+            EmojiManager.getByCategory(category)
+        }
+
+        assertTrue(emojisInCategories.any { it.isPristine })
+    }
+
+    @Test
+    fun `all only contains pristine emojis`() {
+        assertTrue(EmojiManager.all.all { it.isPristine })
+        assertTrue(EmojiManager.all.any { it.skinVariations.isNotEmpty() })
+    }
+
+    @Test
+    fun `allWithSkinVariations contains pristine emojis`() {
+        assertTrue(EmojiManager.allWithSkinVariations.any { it.isPristine })
+    }
 }

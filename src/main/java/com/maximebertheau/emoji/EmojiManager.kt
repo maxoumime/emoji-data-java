@@ -4,8 +4,9 @@ import com.maximebertheau.emoji.EmojiLoader.loadEmojis
 
 object EmojiManager {
     private val emojis: List<Emoji>
-    val all: List<Emoji> get() = emojis.filter { it.isPristine }
-    val allWithSkinVariations get() = emojis
+    private val pristineEmojis: List<Emoji>
+    val all: List<Emoji> get() = pristineEmojis
+    val allWithSkinVariations: List<Emoji> get() = emojis
     private val emojisByAlias = mutableMapOf<String, MutableList<Emoji>>()
     private val emojisByCategory = mutableMapOf<Category, MutableList<Emoji>>()
     internal val emojiTree: EmojiTrie
@@ -24,19 +25,26 @@ object EmojiManager {
         val shorterUnicodeFirst = Comparator<Emoji> { a, b -> b.unified.unicode.compareTo(a.unified.unicode) }
 
         val namesInsertedInCategories = mutableSetOf<String>()
+        val pristineEmojis = mutableListOf<Emoji>()
         for (emoji in emojis) {
+            // Alias map
+            for (alias in emoji.aliases) {
+                val emojiList = (emojisByAlias[alias] ?: mutableListOf()) + emoji
+                emojisByAlias[alias] = emojiList.sortedWith(shorterUnicodeFirst).toMutableList()
+            }
+
+            if (!emoji.isPristine) continue
+
+            pristineEmojis += emoji
+
             // Category map
             if (namesInsertedInCategories.add(emoji.unified)) {
                 val emojiListForCategory = (emojisByCategory[emoji.category] ?: mutableListOf()) + emoji
                 emojisByCategory[emoji.category] = emojiListForCategory.sortedBy { it.sortOrder }.toMutableList()
             }
 
-            // Alias map
-            for (alias in emoji.aliases) {
-                val emojiList = (emojisByAlias[alias] ?: mutableListOf()) + emoji
-                emojisByAlias[alias] = emojiList.sortedWith(shorterUnicodeFirst).toMutableList()
-            }
         }
+        this.pristineEmojis = pristineEmojis
         emojiTree = EmojiTrie(emojis)
     }
 
