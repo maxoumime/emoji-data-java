@@ -32,7 +32,8 @@ The `EmojiManager` provides several static methods to search through the emojis 
 
 * `getForAlias` returns the emoji for an alias
 * `getByUnicode` returns the emoji for a unicode String
-* `all` or `getAll()` returns all the emojis
+* `all` or `getAll()` returns all the official emojis
+* `allWithSkinVariations` or `getAllWithSkinVariations()` returns all the emojis and their skin variations in the same array
 * `isEmoji` checks if a String is an emoji
 * `getByCategory` get emojis depending on their `Category`
 
@@ -140,6 +141,7 @@ System.out.println(EmojiParser.parseToAliases(str));
 ## Credits
 
 **emoji-java** initially based on the great work of the community from [vdurmont/emoji-java](https://github.com/vdurmont/emoji-java)
+
 **emoji-data** provides the emojis for the library to work [iamcal/emoji-data](https://github.com/iamcal/emoji-data).
 
 ## Available Emojis
