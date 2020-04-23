@@ -81,8 +81,8 @@ publishing {
                         maven {
 
                             credentials {
-                                username = ext.properties["BINTRAY_USERNAME"] as String?
-                                password = ext.properties["BINTRAY_API_KEY"] as String?
+                                username = rootProject.property("BINTRAY_USERNAME") as String?
+                                password = rootProject.property("BINTRAY_API_KEY") as String?
                             }
 
                             name = "maxoumime-emoji-data-java"
