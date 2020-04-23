@@ -3,7 +3,9 @@ package com.maximebertheau.emoji
 import com.maximebertheau.emoji.EmojiLoader.loadEmojis
 
 object EmojiManager {
-    val all: List<Emoji>
+    private val emojis: List<Emoji>
+    val all: List<Emoji> get() = emojis.filter { it.isPristine }
+    val allWithSkinVariations get() = emojis
     private val emojisByAlias = mutableMapOf<String, MutableList<Emoji>>()
     private val emojisByCategory = mutableMapOf<Category, MutableList<Emoji>>()
     internal val emojiTree: EmojiTrie
@@ -17,7 +19,7 @@ object EmojiManager {
             }
         }).toList()
 
-        this.all = emojis
+        this.emojis = emojis
 
         val shorterUnicodeFirst = Comparator<Emoji> { a, b -> b.unified.unicode.compareTo(a.unified.unicode) }
 

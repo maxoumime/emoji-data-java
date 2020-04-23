@@ -65,7 +65,7 @@ internal object EmojiLoader {
                 }
                 .orEmpty()
 
-        val emojiBase = Emoji(name, unified, aliases, isObsolete, category, sortOrder, emptyList(), pristine = true)
+        val emojiBase = Emoji(name, unified, aliases, isObsolete, category, sortOrder, emptyList(), isPristine = true)
 
         return sequence {
             yield(emojiBase)
@@ -78,7 +78,7 @@ internal object EmojiLoader {
                         alias + ":" + variation.types.joinToString(separator = "") { ":${it.alias}:" }.trimEnd(':')
                     }
                 }
-                yield(emojiBase.copy(aliases = newAliases, unified = variation.unified, pristine = false))
+                yield(emojiBase.copy(aliases = newAliases, unified = variation.unified, isPristine = false))
             }
         }
     }

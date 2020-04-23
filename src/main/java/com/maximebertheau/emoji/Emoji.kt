@@ -8,7 +8,7 @@ data class Emoji(
         val category: Category,
         val sortOrder: Int,
         val skinVariations: List<SkinVariation>,
-        internal val pristine: Boolean
+        internal val isPristine: Boolean
 ) {
     val unicode get() = unified.unicode
 }
