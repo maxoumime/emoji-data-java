@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import java.net.URI
 
 plugins {
     id("java")
@@ -10,6 +11,8 @@ repositories {
     mavenLocal()
     maven("https://repo.maven.apache.org/maven2")
     mavenCentral()
+    jcenter()
+
 }
 
 dependencies {
@@ -45,6 +48,48 @@ publishing {
             version = "2.0"
 
             from(components["java"])
+
+            pom {
+                packaging = "jar"
+                url.set("https://github.com/maxoumime/emoji-data-java")
+                description.set("The missing emoji library for Java, using emoji-data.")
+                developers {
+                    developer {
+                        email.set("maxime.bertheau@gmail.com")
+                        name.set("Maxime Bertheau")
+                        url.set("https://www.maximebertheau.com")
+                    }
+                }
+
+                licenses {
+                    license {
+                        name.set("The MIT License")
+                        url.set("http://www.opensource.org/licenses/mit-license.php")
+                        distribution.set("repo")
+                    }
+                }
+
+                scm {
+                    url.set("https://github.com/maxoumime/emoji-data-java")
+                    connection.set("scm:git:git://github.com/maxoumime/emoji-data-java.git")
+                    developerConnection.set("scm:git:ssh://github.com/maxoumime/emoji-data-java.git")
+                }
+
+                distributionManagement {
+                    repositories {
+                        maven {
+
+                            credentials {
+                                username = ext.properties["BINTRAY_USERNAME"] as String?
+                                password = ext.properties["BINTRAY_API_KEY"] as String?
+                            }
+
+                            name = "maxoumime-emoji-data-java"
+                            url = "https://api.bintray.com/maven/maxoumime/emoji-data-java/emoji-data-java/;publish=1".let(::URI)
+                        }
+                    }
+                }
+            }
         }
     }
 }
