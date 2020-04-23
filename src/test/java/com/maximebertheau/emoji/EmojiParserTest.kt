@@ -35,14 +35,6 @@ class EmojiParserTest {
     }
 
     @Test
-    fun test() {
-        val unicode = EmojiParser.parseToUnicode(":hash::keycap_star::zero::one::two::three::four::five::six::seven::eight::nine::copyright::registered::mahjong::black_joker::a::b::o2::parking::ab::cl::cool::free::id::new::ng::ok::sos::up::vs::flag-ac::flag-ad::flag-ae::flag-af::flag-ag::flag-ai::flag-al::flag-am::flag-ao::flag-aq::flag-ar::flag-as::flag-at::flag-au::flag-aw::flag-ax::flag-az::flag-ba::flag-bb::flag-bd::flag-be::flag-bf::flag-bg::flag-bh::flag-bi::flag-bj::flag-bl::flag-bm::flag-bn::flag-bo::flag-bq::flag-br::flag-bs::flag-bt::flag-bv::flag-bw::flag-by::flag-bz::flag-ca::flag-cc::flag-cd:")
-
-        val result = EmojiParser.parseToAliases(unicode)
-
-    }
-
-    @Test
     fun `parseToAliases replaces the emojis by one of their aliases`() {
         // GIVEN
         val str = "An 😀awesome 😃string with a few 😉emojis!"
