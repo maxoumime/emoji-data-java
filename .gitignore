@@ -5,3 +5,7 @@ target
 *.iml
 .idea
 settings.xml
+
+# Gradle
+build
+.gradle
