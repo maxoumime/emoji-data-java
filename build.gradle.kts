@@ -17,9 +17,10 @@ repositories {
 
 dependencies {
     implementation("org.json:json:20140107")
-    testImplementation("junit:junit:4.12")
     implementation(kotlin("stdlib-jdk8"))
-    implementation(kotlin("test-junit"))
+
+    testImplementation("junit:junit:4.12")
+    testImplementation(kotlin("test-junit"))
 }
 
 java {
