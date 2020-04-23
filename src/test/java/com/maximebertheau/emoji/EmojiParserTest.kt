@@ -23,14 +23,23 @@ class EmojiParserTest {
     @Test
     fun `can parse all the emojis from their unicode version`() {
         // GIVEN
-        val str = EmojiManager.all.joinToString(separator = "") { it.unified.unicode }
+        val emojis = EmojiManager.all
+        val str = emojis.joinToString(separator = "") { it.unified.unicode }
 
         // WHEN
         val result = EmojiParser.parseToAliases(str)
 
         // THEN
-        val aliasVersion = EmojiManager.all.map { it.aliases.first() }.joinToString(separator = "") { ":$it:" }
+        val aliasVersion = emojis.map { it.aliases.first() }.joinToString(separator = "") { ":$it:" }
         assertEquals(aliasVersion, result)
+    }
+
+    @Test
+    fun test() {
+        val unicode = EmojiParser.parseToUnicode(":hash::keycap_star::zero::one::two::three::four::five::six::seven::eight::nine::copyright::registered::mahjong::black_joker::a::b::o2::parking::ab::cl::cool::free::id::new::ng::ok::sos::up::vs::flag-ac::flag-ad::flag-ae::flag-af::flag-ag::flag-ai::flag-al::flag-am::flag-ao::flag-aq::flag-ar::flag-as::flag-at::flag-au::flag-aw::flag-ax::flag-az::flag-ba::flag-bb::flag-bd::flag-be::flag-bf::flag-bg::flag-bh::flag-bi::flag-bj::flag-bl::flag-bm::flag-bn::flag-bo::flag-bq::flag-br::flag-bs::flag-bt::flag-bv::flag-bw::flag-by::flag-bz::flag-ca::flag-cc::flag-cd:")
+
+        val result = EmojiParser.parseToAliases(unicode)
+
     }
 
     @Test

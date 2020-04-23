@@ -1,7 +1,5 @@
 package com.maximebertheau.emoji
 
-import java.util.regex.Pattern
-
 object EmojiParser {
     private val aliasMatchingRegex = Regex(""":([\w_+-]+)(?:(?:\||::)((type_|skin-tone-\d+)[\w_]*))*:""")
     private val aliasMatchingRegexOptionalColon = Regex(""":?([\w_+-]+)(?:(?:\||::)((type_|skin-tone-\d+)[\w_]*))*:?""")
@@ -11,75 +9,101 @@ object EmojiParser {
      * @param input the String potentially containing emoji in their unicode version
      * @return the aliased version of the input
      */
+    @OptIn(ExperimentalStdlibApi::class)
     @JvmStatic
     fun parseToAliases(input: String): String {
         if (input.isEmpty()) return input
 
         val root = EmojiManager.emojiTree.root
 
+        class LastMatch(val node: Node, val path: List<Char>, val char: Char, val index: Int) {
+            val emoji = node.emoji!!
+        }
+
+        val validMatches = mutableListOf<LastMatch>()
+
         var node: Node = root
-        var lastValidNode: Node? = null
-        var lastValidPath = mutableListOf<Char>()
-        var path = mutableListOf<Char>()
+        val path = mutableListOf<Char>()
 
         fun findFirstNode(c: Char): Node {
-            path = mutableListOf()
-            lastValidNode = null
-            lastValidPath = mutableListOf()
+            path.clear()
+            validMatches.clear()
             return if (root.hasChild(c)) {
-                path.add(c)
+                path += c
                 root.getChild(c)!!
             } else {
                 root
             }
         }
 
-        val thrownAwayChars = mutableListOf<Char>()
-        val thrownAwayPaths = mutableListOf<String>()
+        val matchedEmojis = mutableListOf<Pair<String, Emoji>>()
 
-        val matchedEmojis = mutableMapOf<String, Emoji>()
+        var i = 0
+        var c: Char? = input[i++]
 
-        for (c in input) {
+         while (c != null) {
             if (node.emoji != null && node.hasChild(c)) {
-                lastValidPath = path
-                lastValidNode = node
+                validMatches.add(LastMatch(
+                        node = node,
+                        char = input[i-1],
+                        path = path,
+                        index = i
+                ))
             }
             when {
                 node.hasChild(c) -> {
-                    path.add(c)
+                    path += c
                     node = node.getChild(c)!!
+                    c = input.getOrNull(i++)
                 }
                 node.emoji != null -> {
-                    matchedEmojis[path.joinToString(separator = "")] = node.emoji!!
+                    matchedEmojis += path.joinToUnicode() to node.emoji!!
                     node = findFirstNode(c)
+                    c = input.getOrNull(i++)
                 }
-                node.emoji == null -> {
-                    lastValidNode?.emoji?.let {
-                        matchedEmojis[lastValidPath.joinToString(separator = "")] = it
+                node.emoji == null && validMatches.isNotEmpty() -> {
+                    val match = validMatches.last()
+                    val oldPath = match.path.dropLast(1).toMutableList()
+                    matchedEmojis += oldPath.joinToUnicode() to match.emoji
+                    val newPath = path.dropWhile { it == oldPath.removeFirstOrNull() }
+                    path.clear()
+                    path.addAll(newPath)
+                    validMatches.removeLast()
 
-                        thrownAwayChars += path - lastValidPath + c
-                        thrownAwayPaths += (lastValidPath + c).joinToString(separator = "")
-                    }
-
+                    node = findNodeForPath(path)!!
+                }
+                else -> {
                     node = findFirstNode(c)
+                    c = input.getOrNull(i++)
                 }
             }
         }
 
-        lastValidNode?.emoji?.let {
-            matchedEmojis[lastValidPath.joinToString(separator = "")] = it
-        }
-
         if (node.emoji != null) {
-            matchedEmojis[path.joinToString(separator = "")] = node.emoji!!
+            matchedEmojis += path.joinToUnicode() to node.emoji!!
         }
 
-        return matchedEmojis.entries
-                .sortedByDescending { it.key.length }
+        return matchedEmojis
+                .sortedWith(compareBy { -it.first.length })
+//                .sortedWith(compareBy({ -it.key.length }, { -input.indexOf(it.key) }))
+//                .sortedByDescending { input.indexOf(it.key) }
                 .fold(input) { acc, (toReplace, emoji) ->
-                    val pattern = Pattern.quote(toReplace)
-                    acc.replace(Regex("$pattern\\u200d?"), ":${emoji.aliases.first()}:")
+//                    val pattern = Pattern.quote(toReplace)
+//                    acc.replace(Regex("$pattern\\u200d?"), ":${emoji.aliases.first()}:")
+                    acc.replaceFirst(toReplace, ":${emoji.aliases.first()}:")
                 }
+    }
+
+    private fun List<Char>.joinToUnicode() = joinToString(separator = "")
+
+    @OptIn(ExperimentalStdlibApi::class)
+    private fun findNodeForPath(path: List<Char>): Node? {
+        val pathfinding = path.toMutableList()
+        return generateSequence(EmojiManager.emojiTree.root) { node ->
+            pathfinding.removeFirstOrNull()?.let { char ->
+                node.takeIf { it.hasChild(char) }?.getChild(char)
+            }
+        }.drop(1).toList().takeIf { it.count() == path.count() }?.lastOrNull()
     }
 
     /**
