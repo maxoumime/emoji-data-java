@@ -9,14 +9,13 @@ object EmojiParser {
      * @param input the String potentially containing emoji in their unicode version
      * @return the aliased version of the input
      */
-    @OptIn(ExperimentalStdlibApi::class)
     @JvmStatic
     fun parseToAliases(input: String): String {
         if (input.isEmpty()) return input
 
         val root = EmojiManager.emojiTree.root
 
-        class LastMatch(val node: Node, val path: List<Char>, val char: Char, val index: Int) {
+        class LastMatch(val node: Node, val path: List<Char>) {
             val emoji = node.emoji!!
         }
 
@@ -25,7 +24,7 @@ object EmojiParser {
         var node: Node = root
         val path = mutableListOf<Char>()
 
-        fun findFirstNode(c: Char): Node {
+        fun newPathFinding(c: Char): Node {
             path.clear()
             validMatches.clear()
             return if (root.hasChild(c)) {
@@ -41,39 +40,51 @@ object EmojiParser {
         var i = 0
         var c: Char? = input[i++]
 
-         while (c != null) {
+        while (c != null) {
+
+            // Sometimes we go too far during the path finding, we need to keep track of checkpoints where we did match
+            // and emoji
             if (node.emoji != null && node.hasChild(c)) {
-                validMatches.add(LastMatch(
-                        node = node,
-                        char = input[i-1],
-                        path = path,
-                        index = i
-                ))
+                validMatches += LastMatch(node = node, path = path)
             }
+
             when {
+                // Go further down the rabbit hole
                 node.hasChild(c) -> {
                     path += c
                     node = node.getChild(c)!!
                     c = input.getOrNull(i++)
                 }
+                // Add the new emoji
                 node.emoji != null -> {
                     matchedEmojis += path.joinToUnicode() to node.emoji!!
-                    node = findFirstNode(c)
+                    node = newPathFinding(c)
                     c = input.getOrNull(i++)
                 }
+                // We went too far, check if we got a match before
                 node.emoji == null && validMatches.isNotEmpty() -> {
+
+                    // Get the last match
                     val match = validMatches.last()
+
+                    // Remove the last iteration, that's where we got it wrong
                     val oldPath = match.path.dropLast(1).toMutableList()
+
+                    // Add the new match
                     matchedEmojis += oldPath.joinToUnicode() to match.emoji
-                    val newPath = path.dropWhile { it == oldPath.removeFirstOrNull() }
+
+                    // Rewinding time...
+                    val newPath = path.dropWhile { char ->
+                        char == oldPath.takeIf { it.isNotEmpty() }?.removeAt(0)
+                    }
                     path.clear()
                     path.addAll(newPath)
-                    validMatches.removeLast()
-
                     node = findNodeForPath(path)!!
+                    validMatches.removeAt(validMatches.lastIndex)
                 }
+                // No match at all, move to the next character
                 else -> {
-                    node = findFirstNode(c)
+                    node = newPathFinding(c)
                     c = input.getOrNull(i++)
                 }
             }
@@ -83,27 +94,22 @@ object EmojiParser {
             matchedEmojis += path.joinToUnicode() to node.emoji!!
         }
 
-        return matchedEmojis
-                .sortedWith(compareBy { -it.first.length })
-//                .sortedWith(compareBy({ -it.key.length }, { -input.indexOf(it.key) }))
-//                .sortedByDescending { input.indexOf(it.key) }
-                .fold(input) { acc, (toReplace, emoji) ->
-//                    val pattern = Pattern.quote(toReplace)
-//                    acc.replace(Regex("$pattern\\u200d?"), ":${emoji.aliases.first()}:")
-                    acc.replaceFirst(toReplace, ":${emoji.aliases.first()}:")
-                }
+        return matchedEmojis.fold(input) { acc, (toReplace, emoji) ->
+            acc.replaceFirst(toReplace, ":${emoji.aliases.first()}:")
+        }
     }
 
     private fun List<Char>.joinToUnicode() = joinToString(separator = "")
 
-    @OptIn(ExperimentalStdlibApi::class)
     private fun findNodeForPath(path: List<Char>): Node? {
-        val pathfinding = path.toMutableList()
-        return generateSequence(EmojiManager.emojiTree.root) { node ->
-            pathfinding.removeFirstOrNull()?.let { char ->
-                node.takeIf { it.hasChild(char) }?.getChild(char)
-            }
-        }.drop(1).toList().takeIf { it.count() == path.count() }?.lastOrNull()
+        return generateSequence(EmojiManager.emojiTree.root to path) { (node, steps) ->
+            val nextStep = steps.firstOrNull() ?: return@generateSequence null
+            node.takeIf { it.hasChild(nextStep) }?.getChild(nextStep)?.to(steps.drop(1))
+        }
+                .drop(1) // Removing the first iteration (initial values)
+                .takeIf { it.count() == path.count() }
+                ?.lastOrNull()
+                ?.first
     }
 
     /**
@@ -139,7 +145,7 @@ object EmojiParser {
                 // If we can't convert this alias, it's because a skin tone was added and this emoji doesn't support
                 // skin tone modifiers
                 fullAlias.split("::")
-                        .forEach fallback@ {
+                        .forEach fallback@{
                             val alias = ":${it.trimAlias()}:"
                             uniqueMatches[alias] = getUnicodeFromAlias(alias) ?: return@fallback
                         }
